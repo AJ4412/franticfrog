@@ -1,6 +1,9 @@
 {
   "name": "next-app",
-  "version": "5.0.0",
+  "engines": {
+    "node": "16.13.2",
+    "npm": "7.24.1"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
