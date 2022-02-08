@@ -1,0 +1,354 @@
+import React, { useEffect, useState } from "react";
+import Axios from "axios";
+import useSWR from 'swr'
+// import Video from "../assets/video/hero.mp4";
+import Timer from "./common/Timer";
+import {Box, Container, Divider, IconButton, Stack} from "@mui/material";
+import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
+import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import {PrimaryButton} from "./common/PrimaryButton";
+import Web3 from "web3";
+import Web3Modal from "web3modal";
+import { contract_address, contract_abi, buy_price, speedy_nodes} from '../config';
+
+const Hero = () => {
+  // set date to 22 feb 2022 9 hours 0 minutes 0 seconds
+  const time = new Date("2022-02-22T15:30:00.000Z");
+  console.log(time, "time");
+  // const date = new Date(Date.now() + 86400000 * 22 + 3600000 * 19);
+  // console.log(date);
+
+  // nextTime.getMonth(1);
+  // nextTime.getHours(9);
+  // nextTime.getMinutes(0);
+  // nextTime.getSeconds(0);
+  // console.log(nextTime, "next time");
+
+
+  useEffect(() => {
+    fetch_data();
+    fetch_supply();
+    demo();
+  }, [])
+  const [mintNumber,setMintNumber] = useState(1);
+  const [totalsupply, settotalsupply] = useState(0);
+  const [price, set_price] = useState(0);
+  // const [total, set_total] = useState(0.2);
+  // set_total(mintNumber*price);
+  let total = mintNumber * price+0.000000000000001;
+  const onMintNumberChange = (e) => {
+    setMintNumber(+e.target.value);
+  }
+
+  const mintButtonClickHandler = () => {
+    sale_controller();
+  }
+  const [walletstatus, set_walletstatus] = useState("Connect Wallet");
+ 
+  
+  
+
+ 
+  async function connect_wallet(){
+    if(Web3.givenProvider){
+      const providerOptions = {
+        /* See Provider Options Section */
+      };
+      
+      const web3Modal = new Web3Modal({
+        network: "mainnet", // optional
+        cacheProvider: true, // optional
+        providerOptions // required
+      });
+      
+      const provider = await web3Modal.connect();
+      const web3 = new Web3(provider);
+
+      web3.eth.net.getId().then((result) => { 
+    
+      console.log("Network id: "+result)
+      if(result !== 1){
+          alert("Wrong Network Selected. Select Ethemerun mainnet");
+        }
+      })
+      set_walletstatus("Wallet Connected");
+    }else{
+      alert("Web3 Not Found");
+    }
+
+  }
+
+  async function fetch_supply(){ 
+    const web3 = new Web3(speedy_nodes);
+    const contract = new web3.eth.Contract(contract_abi, contract_address);
+    //await Web3.givenProvider.enable()
+
+    contract.methods.totalSupply().call((err,result) => {
+        console.log("error: "+err);
+        if(result != null){
+          settotalsupply(result);
+        }
+    }) 
+}
+
+async function fetch_data(){
+
+    const web3 = new Web3(speedy_nodes);
+    const contract = new web3.eth.Contract(contract_abi, contract_address);
+    //await Web3.givenProvider.enable()
+
+    contract.methods.Presale_status().call((err,result) => {
+        console.log("error: "+err);
+        if(result===true){
+           set_price(0.06);
+        }
+        else{
+          set_price(0.1);
+        }
+    })  
+   }
+
+
+
+
+  async function show_error_alert(error){
+    let temp_error = error.message.toString();
+    console.log(temp_error);
+    let error_list = [
+      "It's not time yet",
+      "Sent Amount Wrong",
+      "Max Supply Reached",
+      "You have already Claimed Free Nft.",
+      "Presale have not started yet.",
+      "You are not in Presale List",
+      "Presale Ended.",
+      "You are not Whitelisted.",
+      "Sent Amount Not Enough",
+      "Max 20 Allowed.",
+      "insufficient funds",
+      "Sale is Paused.",
+      "mint at least one token",
+      "max per transaction 20",
+      "Not enough tokens left",
+      "incorrect ether amount",
+      "5 tokens per wallet allowed in presale",
+      "10 tokens per wallet allowed in publicsale"
+
+      
+    ]
+  
+    for(let i=0;i<error_list.length;i++){
+      if(temp_error.includes(error_list[i])){
+       // set ("Transcation Failed")
+        alert(error_list[i]);
+      }
+    }
+  } 
+  function sale_controller(){
+      const web3 = new Web3(speedy_nodes);
+      const contract = new web3.eth.Contract(contract_abi, contract_address);
+      //await Web3.givenProvider.enable()
+      console.log("error: i am in fetch ");
+      contract.methods.Presale_status().call((err,result) => {
+          console.log("error: "+err);
+          console.log(result)
+          if(result===true){
+            presalemint_nft();
+          
+            
+          }
+          else{
+            mint_nft();
+          }
+      })
+    }
+
+
+    // async function presalemint_test(){
+     
+    //     const res = await fetch(`https://ux16dx58qa.execute-api.us-east-1.amazonaws.com/proof/0x5DE064024c5b898C016059B5d4c94Fc42cc8579b`)
+    //     const data = await res.json()
+      
+    //    console.log(data);
+
+    // }
+
+
+
+    async function demo(){
+      let res = await fetch("https://ux16dx58qa.execute-api.us-east-1.amazonaws.com/proof/0x5DE064024c5b898C016059B5d4c94Fc42cc8579b");
+       console.log(res);
+       let proof = await res.json();
+       console.log(proof);
+    }
+
+    async function presalemint_nft(){
+
+      if(Web3.givenProvider ){ 
+  
+        const web3 = new Web3(Web3.givenProvider);
+        await Web3.givenProvider.enable()
+        const contract = new web3.eth.Contract(contract_abi, contract_address);
+        const addresses = await web3.eth.getAccounts()
+        const address = addresses[0]
+        console.log("addresses[0]: "+addresses[0])
+        // console.log("addresses[1]: "+addresses[1])
+        // console.log("Default address: "+await web3.eth.defaultAccount)
+
+        //test end
+        try {
+        const estemated_Gas = await contract.methods.buy_presale(mintNumber).estimateGas({
+          from : address, 
+          value: web3.utils.toWei(total.toString(),"ether"),
+          maxPriorityFeePerGas: null,
+          maxFeePerGas: null
+        });
+        console.log(estemated_Gas);
+       
+        const result = await contract.methods.buy_presale(mintNumber).send({
+          from : address,
+          value: web3.utils.toWei(total.toString(),"ether"),
+          gas: estemated_Gas,
+          maxPriorityFeePerGas: null,
+          maxFeePerGas: null
+        })
+      } catch (error) {
+          show_error_alert(error);
+        }
+      
+       //await contract.methods.tokenByIndex(i).call();
+      }
+  
+  }
+  async function mint_nft(){
+
+    if(Web3.givenProvider ){ 
+
+        const web3 = new Web3(Web3.givenProvider);
+        await Web3.givenProvider.enable()
+        const contract = new web3.eth.Contract(contract_abi, contract_address);
+  
+        const addresses = await web3.eth.getAccounts()
+        const address = addresses[0]
+        console.log("addresses[0]: "+addresses[0])
+        // console.log("addresses[1]: "+addresses[1])
+        // console.log("Default address: "+await web3.eth.defaultAccount)
+        try {
+          const estemated_Gas = await contract.methods.buy(mintNumber).estimateGas({
+            from : address, 
+            value: web3.utils.toWei(total.toString(),"ether"),
+            maxPriorityFeePerGas: null,
+            maxFeePerGas: null
+          });
+          console.log(estemated_Gas)
+          const result = await contract.methods.buy(mintNumber).send({
+            from : address,
+            value: web3.utils.toWei(total.toString(),"ether"),
+            gas: estemated_Gas,
+            maxPriorityFeePerGas: null,
+            maxFeePerGas: null
+          })
+        } catch (error) {
+          show_error_alert(error);
+        }
+      
+       // await contract.methods.tokenByIndex(i).call();
+      }}
+
+      function maxnftbutton(){
+        setMintNumber(20);
+      }
+
+   const onMinusClickHandler = () => {
+        if (mintNumber <= 1) return;
+
+        setMintNumber(mintNumber - 1);
+    }
+
+    const onPlusClickHandler = () => {
+        if (mintNumber >= 20) return;
+
+        setMintNumber(mintNumber + 1);
+    }
+
+
+  return (
+    <div className="hero-section position-relative">
+      <video
+        className="h-100 w-100 object-cover"
+        src="/video/hero.mp4"
+        loop
+        muted
+        playsInline
+        autoPlay={true}
+        width="100%"
+      />
+      <div className="hero-sale-section px-2">
+        <div className="text-center">
+
+     
+        <Stack direction={'row'} justifyContent={'space-between'} sx={{
+                                fontSize: {xs: '16px', lg: "23px"},
+                                color: '#fff',
+                                py: '8px',
+                                alignItems: 'center',
+                            }}>
+                                <Box>
+                                    Quantity
+                                </Box>
+                                <Stack alignItems={'center'} direction={'row'} spacing={3}>
+                                    <IconButton onClick={onMinusClickHandler} sx={{
+                                        color: '#fff'
+                                    }}>
+                                        <RemoveOutlinedIcon color={'#fff'}/>
+                                    </IconButton>
+                                    <Box>
+                                        {mintNumber}
+                                    </Box>
+                                    <IconButton onClick={onPlusClickHandler} sx={{
+                                        color: '#fff'
+                                    }}>
+                                        <AddOutlinedIcon color={'#fff'}/>
+                                    </IconButton>
+
+                                </Stack>
+                                <Box>
+                                    <PrimaryButton onClick={maxnftbutton}>
+                                        MAX
+                                    </PrimaryButton>
+                                </Box>
+                            </Stack>
+                            <Divider color={'red'} sx={{height: '2px', opacity: '.25'}}/>
+
+          <button onClick={mintButtonClickHandler} className="mint-button px-5 py-2 my-4">Mint</button>
+        </div>
+        <div className="sale-section px-sm-5 py-2 ">
+          <div className="container">
+            <div className="row">
+              <div className="col-6 ">
+                <p className="sale-heading montserrat-font-family text-center mb-1">
+                  PRESALE
+                </p>
+                <p className="montserrat-font-family sale-text mb-0 text-center">
+                  February 22nd, 9PM EST
+                </p>
+                <Timer date="23" sale="PRESALE" />
+              </div>
+              <div className="col-6 ">
+                <p className="sale-heading montserrat-font-family text-center mb-1">
+                  PUBLIC SALE
+                </p>
+                <p className="montserrat-font-family sale-text mb-0 text-center">
+                  February 24nd, 9PM EST
+                </p>
+                <Timer date="25" sale="PUBLIC SALE" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;

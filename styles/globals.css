@@ -1,0 +1,834 @@
+/* html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+} */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap");
+/* ===================================================================== FONT SIZES ============================================================ */
+
+.montserrat-font-family {
+  font-family: "Montserrat", sans-serif;
+}
+
+.kanit-font-family {
+  font-family: "Kanit", sans-serif;
+}
+
+body,
+html {
+  background-color: var(--black) !important;
+  overflow-x: hidden;
+}
+
+:root {
+  --font-2xxl: 80px;
+  --font-xxl: 70px;
+  --font-xl: 40px;
+  --font-lg: 26px;
+  --font-md: 20px;
+  --font-sm: 18px;
+  /* COLORS */
+  --white: #ffffff;
+  --black: #000000;
+  --light-black: #36393f;
+  --grey: #c4c4c4;
+}
+
+@media (max-width: 991.98px) {
+  :root {
+    --font-2xxl: 50px;
+    --font-xxl: 40px;
+    --font-xl: 30px;
+    --font-lg: 24px;
+    --font-md: 20px;
+    --font-sm: 18px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  :root {
+    --font-2xxl: 40px;
+    --font-xxl: 30px;
+    --font-xl: 25px;
+    --font-lg: 22px;
+    --font-md: 18px;
+    --font-sm: 16px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  :root {
+    --font-2xxl: 30px;
+    --font-xxl: 25px;
+    --font-xl: 20px;
+    --font-lg: 18px;
+    --font-md: 10px;
+    --font-sm: 14px;
+  }
+}
+
+/* ================================================================ CLASSES ================================================================== */
+.loading {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.padding-top-10 {
+  padding-top: 10rem;
+}
+
+.topscroll {
+  position: fixed;
+  right: 40px;
+  bottom: 45px;
+  background-color: var(--white);
+  height: 50px;
+  z-index: 10;
+  width: 50px;
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+}
+
+.topscroll:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-7px);
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.main-heading {
+  font-weight: 600;
+  font-size: var(--font-xl);
+  color: var(--white);
+}
+
+.small-heading {
+  font-weight: 700;
+  font-size: var(--font-sm);
+  color: var(--white);
+}
+
+.opacity-07 {
+  opacity: 0.7;
+}
+
+.small-text {
+  font-weight: 400;
+  font-size: var(--font-sm);
+  color: var(--white);
+}
+
+.header-text {
+  font-weight: 700;
+  font-size: var(--font-md);
+  color: var(--white);
+}
+
+.mint-button {
+  background-color: var(--white);
+  border-radius: 64px;
+  color: var(--black);
+  font-weight: 700;
+  font-size: var(--font-md);
+  border: 1px solid var(--white);
+  transition: 0.3s;
+}
+
+.mint-button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+/* ================================================================== NAVBAR ======================================================== */
+/* HEADER OVERLAY STYLES  */
+.black {
+  background-color: transparent;
+  position: fixed;
+  top: 0px;
+  transition: 0.3s;
+  z-index: 14;
+}
+
+.transparent {
+  background-color: var(--black);
+  position: fixed;
+  top: 0px;
+  transition: 0.3s;
+  z-index: 14;
+}
+
+.navbar-wrapper .nav-list-items a {
+  font-weight: 700;
+  font-size: var(--font-md);
+  color: var(--white) !important;
+  text-decoration: none;
+  position: relative;
+}
+
+a {
+  color: transparent !important;
+}
+
+.navbar-wrapper .nav-list-items a::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: rgb(240, 240, 240);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-wrapper .nav-list-items a:hover::after {
+  width: 100%;
+}
+.navbar-wrapper {
+  transition: 0.3s ease;
+}
+/* HAMBURGER ICON STYLE  */
+@media (max-width: 991.98px) {
+  /* NAVBAR OVERLAY TOGGLE */
+
+  .navbarwrapper {
+    position: relative;
+    width: 29px;
+    cursor: pointer;
+    height: 25px;
+    z-index: 15;
+  }
+
+  .first {
+    background-color: #fff;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    border-radius: 20px;
+    right: 0;
+  }
+
+  .second {
+    background-color: #fff;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+  .logo-img {
+    width: 50px;
+  }
+
+  .third {
+    background-color: #fff;
+    width: 100%;
+    height: 6px;
+    position: absolute;
+    right: 0;
+    border-radius: 20px;
+    margin-top: 20px;
+  }
+
+  .animate .second {
+    opacity: 0;
+  }
+
+  .animate .first {
+    top: 11px;
+    transform: rotate(45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1;
+  }
+
+  .animate .third {
+    top: -8px;
+    transform: rotate(-45deg);
+    transition: top 300ms cubic-bezier(0.23, 1, 0.32, 1),
+      transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1);
+    z-index: 1;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .overlay-nav {
+    transition: 0.7s ease !important;
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--black);
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    pointer-events: none;
+  }
+}
+
+.overlay-active {
+  z-index: 10;
+  transition: 0.7s ease !important;
+  opacity: 1;
+  pointer-events: all;
+}
+
+.pt-30 {
+  padding-top: 30px;
+}
+
+.object-fit {
+  object-fit: contain;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.overlay-nav li {
+  transform: translateY(10px);
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  font-weight: 700;
+  font-size: var(--font-md);
+  color: var(--white);
+  list-style-type: none;
+}
+
+.overlay-active ul li:nth-child(1) {
+  animation: animate_links 0.9s;
+  animation-delay: 0.2s;
+  transform: translateY(10px);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.overlay-active ul li:nth-child(2) {
+  animation: animate_links 0.9s;
+  animation-delay: 0.4s;
+  transform: translateY(10px);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.overlay-active ul li:nth-child(3) {
+  animation: animate_links 0.9s;
+  animation-delay: 0.6s;
+  transform: translateY(10px);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.overlay-active ul li:nth-child(4) {
+  animation: animate_links 0.9s;
+  animation-delay: 0.8s;
+  transform: translateY(10px);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.overlay-active ul li:nth-child(5) {
+  animation: animate_links 0.9s;
+  animation-delay: 1s;
+  transform: translateY(10px);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.overlay-active ul li:nth-child(6) {
+  animation: animate_links 0.9s;
+  animation-delay: 1.2s;
+  transform: translateY(10px);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+.link {
+  transform: translateY(10px);
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+  list-style-type: none;
+}
+
+.link {
+  animation: animate_links 0.9s;
+  animation-delay: 1.3s;
+  transform: translateY(10px);
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes animate_links {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(-20px);
+    opacity: 1;
+  }
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.fix-screen-height {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-hover {
+  transition: 0.4s;
+}
+
+.header-hover:hover {
+  transform: scale(1.2);
+}
+
+/* HEADER OVERLAY STYLES  */
+/* =========================================================== HERO SECTION =============================================== */
+.hero-section {
+  height: 100vh;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+.object-fit-contain {
+  object-fit: contain;
+}
+
+.sale-section {
+  background-color: var(--white);
+  border-radius: 13px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.sale-heading {
+  color: var(--black);
+  font-weight: 700;
+  font-size: var(--font-md);
+}
+
+.sale-text {
+  font-weight: 400;
+  color: var(--black);
+  font-size: var(--font-md);
+}
+
+.hero-sale-section {
+  position: absolute;
+  bottom: 0%;
+  transform: translateY(-25%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* =========================================================== LOADING ==================================================== */
+.loading-img {
+  animation: bounce-out 4.2s ease-in-out infinite;
+  width: 15vw;
+}
+
+@keyframes bounce-out {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(0.95);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.3);
+  }
+}
+
+/* ============================================================ SLIDER SECTION ========================================================= */
+.rare-img {
+  height: 477px;
+}
+
+.rare-img1 {
+  position: absolute;
+  z-index: 1;
+  top: 114px;
+}
+
+.rare-img2 {
+  position: absolute;
+  z-index: 1;
+  bottom: 38px;
+}
+
+.rare-slider .slick-dots li button:before {
+  font-size: 20px;
+  color: var(--grey);
+}
+
+.rare-slider .slick-dots li {
+  margin: 0px 9px;
+}
+
+.rare-slider .slick-dots li.slick-active button:before {
+  color: var(--white);
+}
+
+.next-arrow {
+  position: absolute;
+  top: 52%;
+  left: 0;
+  z-index: 4;
+}
+
+.prev-arrow {
+  position: absolute;
+  top: 52%;
+  right: 0;
+  z-index: 4;
+}
+
+/* ============================================================= JOIN COMMUNITY SECTION ==================================================== */
+.join-community-section {
+  background-color: var(--light-black);
+}
+
+.community-text {
+  font-size: var(--font-2xxl);
+  font-size: 600;
+  color: var(--white);
+}
+
+.join-btn-img {
+  width: 25px;
+  height: 25px;
+}
+
+.discord-button {
+  background-color: var(--white);
+  border-radius: 64px;
+  color: var(--black);
+  font-weight: 700;
+  font-size: 20px;
+  border: 1px solid var(--black);
+  transition: 0.2s;
+}
+
+.discord-button:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.discord-button:hover svg path {
+  fill: var(--white);
+}
+
+/* ==============================================================ROAD MAP =================================================================== */
+.roadmap-round-circle {
+  height: 58px;
+  width: 58px;
+  background-color: rgba(100, 100, 100, 0.53);
+  border-radius: 50%;
+}
+
+.road-map_cirlce {
+  background-color: rgba(100, 100, 100, 0.53);
+  border-radius: 50%;
+  height: 55px;
+  width: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+}
+
+/* ============================================================== FOOTER SECTION ============================================================= */
+.footer-section {
+  background-color: var(--black);
+}
+
+.border-line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--white);
+}
+
+/* ======================================================== TEAM ===============================================================  */
+.team-heading {
+  font-weight: 600;
+  font-size: var(--font-lg);
+  color: var(--white);
+}
+
+.team-hover {
+  transition: 0.6s;
+}
+
+.team-hover:hover {
+  transform: scale(1.1);
+}
+
+.team-slider .slick-dots li button:before {
+  font-size: 18px;
+  color: var(--grey);
+}
+
+.team-slider .slick-dots li.slick-active button:before {
+  color: var(--white);
+}
+
+.team-slider .small-heading {
+  visibility: hidden;
+}
+
+/* ==================================================== MEDIA QUERIES ====================================================== */
+@media (max-width: 1399.98px) {
+  .rare-img1 {
+    top: 142px;
+  }
+
+  .rare-img2 {
+    bottom: 65px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .rare-img1 {
+    top: 173px;
+  }
+
+  .rare-img2 {
+    bottom: 99px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .rare-img {
+    height: 380px;
+  }
+
+  .rare-img1 {
+    top: 152px;
+  }
+
+  .rare-img2 {
+    bottom: 89px;
+  }
+}
+
+/* THIS MEDIA QUERY IS USED FOR SLIDER TOP CURVE DON'T REMOVE THIS  */
+@media (max-width: 820.98px) {
+  .rare-img1 {
+    top: 117px;
+  }
+
+  .rare-img2 {
+    bottom: 55px;
+  }
+}
+
+@media (min-width: 768px) {
+  .max-width-975 {
+    max-width: 975px;
+  }
+
+  .max-width-335 {
+    max-width: 335px;
+  }
+
+  .max-width-517 {
+    max-width: 517px;
+  }
+
+  .rare-slider .slick-dots {
+    bottom: -50px;
+  }
+
+  .team-slider .slick-dots {
+    bottom: -60px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .padding-top-10 {
+    padding-top: 1rem;
+  }
+
+  .rare-img {
+    height: 300px;
+  }
+
+  .hero-section {
+    height: 80vh;
+  }
+
+  .loading-img {
+    width: 25vw;
+  }
+  .rare-img1 {
+    top: 105px;
+  }
+
+  .rare-img2 {
+    bottom: 50px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .topscroll {
+    right: 10px;
+    bottom: 35px;
+  }
+
+  .discord-button {
+    font-size: 8px;
+  }
+
+  .rare-img {
+    height: 180px;
+  }
+
+  .rare-img1 {
+    top: 52px;
+  }
+
+  .rare-img2 {
+    bottom: 4px;
+  }
+
+  .join-btn-img {
+    width: 10px;
+    height: 10px;
+  }
+
+  .roadmap-round-circle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .next-arrow img {
+    width: 40px;
+  }
+
+  .next-arrow {
+    bottom: -47px;
+    top: unset;
+    left: 20px;
+  }
+
+  .prev-arrow {
+    bottom: -47px;
+    top: unset;
+    right: 20px;
+  }
+
+  .prev-arrow img {
+    width: 40px;
+  }
+
+  .rare-slider .slick-dots li {
+    margin: 0px 5px;
+  }
+
+  .rare-slider .slick-dots li button:before {
+    font-size: 15px;
+  }
+
+  .community-text {
+    font-size: var(--font-xxl);
+  }
+}
+
+@media (max-width: 421px) {
+  .rare-img1 {
+    top: 52px;
+  }
+
+  .rare-img2 {
+    bottom: 4px;
+  }
+}
+@media (max-width: 400px) {
+  .rare-img1 {
+    top: 58px;
+  }
+
+  .rare-img2 {
+    bottom: 9px;
+  }
+}
+
+@media (max-width: 380px) {
+  .rare-img1 {
+    top: 56px;
+  }
+
+  .rare-img2 {
+    bottom: 11px;
+  }
+}
+
+@media (max-width: 361px) {
+  .rare-img1 {
+    top: 66px;
+  }
+
+  .rare-img2 {
+    bottom: 15px;
+  }
+}
+
+@media (max-width: 321px) {
+  .rare-img1 {
+    top: 75px;
+  }
+
+  .rare-img2 {
+    bottom: 23px;
+  }
+}
