@@ -212,15 +212,16 @@ async function fetch_data() {
     
     <div className="hero-section position-relative">
       <div className="hero-sale-section px-2">
-        <div style={{marginTop: "10vh"}} className="text-center">
-        <img   src="/video/hero.gif"/>
+        <div className="text-center">
+          <img style={{ padding: "40px" }} src="/video/hero.gif" />
 
-        <Stack direction={'row'} justifyContent={'space-between'} sx={{
-                                fontSize: {xs: '16px', lg: "23px"},
-                                color: '#fff',
-                                py: '8px',
-                                alignItems: 'center',
-                            }}>
+          <Stack direction={'row'} justifyContent={'space-between'} sx={{
+            fontSize: { xs: '16px', lg: "23px" },
+            color: '#fff',
+            py: '8px',
+            alignItems: 'center',
+            margin: "4px 32px"
+          }}>
                                 <Box>
                                     Quantity
                                 </Box>

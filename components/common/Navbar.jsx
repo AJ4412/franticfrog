@@ -47,7 +47,7 @@ const Navbar = () => {
     });
   };
   return (
-    <>
+    <div style={{height: "240px"}}>
       <section
         className={`${
           scrollPosition > 200 || showOverlay ? "transparent" : "black "
@@ -379,7 +379,7 @@ const Navbar = () => {
           </nav>
         </BeforeDesktop>
       </section>
-    </>
+    </div>
   );
 };
 

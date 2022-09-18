@@ -422,9 +422,9 @@ a {
 
 /* HEADER OVERLAY STYLES  */
 /* =========================================================== HERO SECTION =============================================== */
-.hero-section {
+/* .hero-section {
   height: 100vh;
-}
+} */
 
 .object-cover {
   object-fit: cover;
@@ -454,7 +454,7 @@ a {
 }
 
 .hero-sale-section {
-  position: absolute;
+  position: relative;
   bottom: 0%;
   transform: translateY(-25%);
   display: flex;

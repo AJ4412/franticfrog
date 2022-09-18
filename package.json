@@ -25,6 +25,7 @@
     "react-responsive": "^9.0.0-beta.6",
     "react-slick": "^0.28.1",
     "slick-carousel": "^1.8.1",
+    "sweetalert": "^2.1.2",
     "swr": "^1.2.1",
     "web3": "^1.7.0",
     "web3modal": "^1.9.5"
