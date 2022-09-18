@@ -2,7 +2,7 @@ import React from "react";
 
 const Creator = () => {
   return (
-    <div className="py-5" data-aos="fade-up" data-aos-duration="2000">
+    <div id="creator" className="py-5" data-aos="fade-up" data-aos-duration="2000">
       <div className="container">
         <h1 className="text-center pb-4 main-heading kanit-font-family ">
         CREATORS’ STORY
@@ -10,7 +10,7 @@ const Creator = () => {
         <div className="d-flex justify-content-center">
           <p
             className="text-center small-text opacity-07 max-width-975 montserrat-font-family"
-            id="creator"
+            
           >
             At a Sunday family dinner, our children began discussing a new cool form of art called NFTs.  Diane, who is a conventional visual artist, specifically became interested.
             She thought this would be an invigorating change.  Inspired by the existing NFTs at that time, the idea of frog characters seemed just right, so she created a few frogs using the program paintbrush, one at a time.

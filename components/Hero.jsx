@@ -48,11 +48,7 @@ const Hero = () => {
     sale_controller();
   }
   const [walletstatus, set_walletstatus] = useState("Connect Wallet");
- 
-  
-  
 
- 
   async function connect_wallet(){
     if(Web3.givenProvider){
       const providerOptions = {
@@ -157,42 +153,6 @@ async function fetch_data() {
      mint_nft();
   }
 
-    async function presalemint_nft(){
-
-      if(Web3.givenProvider ){ 
-  
-        const web3 = new Web3(Web3.givenProvider);
-        await Web3.givenProvider.enable()
-        const contract = new web3.eth.Contract(contract_abi, contract_address);
-        const addresses = await web3.eth.getAccounts()
-        const address = addresses[0]
-        console.log("addresses[0]: "+addresses[0])
-        // console.log("addresses[1]: "+addresses[1])
-        // console.log("Default address: "+await web3.eth.defaultAccount)
-        try {
-        const estemated_Gas = await contract.methods.buy_presale(mintNumber).estimateGas({
-          from : address, 
-          value: web3.utils.toWei(total.toString(),"ether"),
-          maxPriorityFeePerGas: null,
-          maxFeePerGas: null
-        });
-        console.log(estemated_Gas);
-       
-        const result = await contract.methods.buy_presale(mintNumber).send({
-          from : address,
-          value: web3.utils.toWei(total.toString(),"ether"),
-          gas: estemated_Gas,
-          maxPriorityFeePerGas: null,
-          maxFeePerGas: null
-        })
-      } catch (error) {
-          show_error_alert(error);
-        }
-      
-       //await contract.methods.tokenByIndex(i).call();
-      }
-  
-  }
   async function mint_nft() {
     if (Web3.givenProvider) {
       const web3 = new Web3(Web3.givenProvider);
@@ -214,7 +174,7 @@ async function fetch_data() {
             maxFeePerGas: null,
           });
         console.log(estemated_Gas);
-        const result = await contract.methods.buy(mintNumber).send({
+        const result = await contract.methods.mint(mintNumber).send({
           from: address,
           value: web3.utils.toWei(total.toString(), "ether"),
           gas: estemated_Gas,
@@ -252,10 +212,9 @@ async function fetch_data() {
     
     <div className="hero-section position-relative">
       <div className="hero-sale-section px-2">
-        <div className="text-center">
-        <div>
-        <img src="/video/hero.gif"/>
-        </div>
+        <div style={{marginTop: "10vh"}} className="text-center">
+        <img   src="/video/hero.gif"/>
+
         <Stack direction={'row'} justifyContent={'space-between'} sx={{
                                 fontSize: {xs: '16px', lg: "23px"},
                                 color: '#fff',
@@ -307,7 +266,7 @@ async function fetch_data() {
                   PUBLIC SALE
                 </p>
                 <p className="montserrat-font-family sale-text mb-0 text-center">
-                  February 24nd, 9PM EST
+                  September 14, 9PM EST
                 </p>
                 <Timer date="25" sale="PUBLIC SALE" />
               </div>

@@ -6,8 +6,8 @@ import TeamSlider from "./TeamSlider";
 // import TwitterImg from "../assets/png/twitter.png";
 const Team = () => {
   return (
-    <div className="container" id="team">
-      <h1 className="main-heading kanit-font-family pb-3 text-center padding-top-10 mt-sm-0 ">
+    <div className="container" >
+      <h1 id="team" className="main-heading kanit-font-family pb-3 text-center padding-top-10 mt-sm-0 ">
         TEAM
       </h1>
       <div className="d-sm-flex d-none flex-column">

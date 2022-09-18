@@ -74,7 +74,11 @@ const Navbar = () => {
                 </li>
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
-                  <a href="#roadmap">HISTORY</a>
+                  <a href="#history">HISTORY</a>
+                </li>
+
+                <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
+                  <a href="#creator">STORY</a>
                 </li>
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
@@ -82,8 +86,14 @@ const Navbar = () => {
                 </li>
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
-                  <a href="https://polygonscan.com/address/0xbb45c37a3e97433b0483300c8ed2749b9a08c6a2">CONTRACT</a>
+                  <a href="#contact">CONTACT</a>
                 </li>
+
+                
+
+                {/* <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
+                  <a href="https://polygonscan.com/address/0xbb45c37a3e97433b0483300c8ed2749b9a08c6a2">CONTRACT</a>
+                </li> */}
               </div>
               <div>
                 <Link
@@ -178,6 +188,19 @@ const Navbar = () => {
                       onClick={() => setShowOverlay(false)}
                     >
                       <a
+                        href="#history"
+                        className="nav-link fs-2 text-white text-decoration-none"
+                      >
+                        HISTORY
+                      </a>
+                    </span>
+                  </li>
+                  <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
+                    <span
+                      className="py-2 py-sm-4 d-inline-block cursor-pointer"
+                      onClick={() => setShowOverlay(false)}
+                    >
+                      <a
                         href="#merch"
                         className="nav-link fs-2 text-white text-decoration-none"
                       >
@@ -211,7 +234,7 @@ const Navbar = () => {
                       </a>
                     </span>
                   </li>
-                  <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
+                  {/* <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
                     <span
                       className="py-2 py-sm-4 d-inline-block cursor-pointer"
                       onClick={() => setShowOverlay(false)}
@@ -223,7 +246,7 @@ const Navbar = () => {
                         CONTRACT
                       </a>
                     </span>
-                  </li>
+                  </li> */}
                 </ul>
                 <div className="link">
                   <Link

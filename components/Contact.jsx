@@ -2,16 +2,15 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <div className="py-5" data-aos="fade-up" data-aos-duration="2000">
+    <div id="contact" className="py-5" data-aos="fade-up" data-aos-duration="2000">
       <div className="container">
-        <h1 className="text-center pb-4 main-heading kanit-font-family ">
+        <h1  className="text-center pb-4 main-heading kanit-font-family ">
         CONTACT US
         </h1>
         <div className="d-flex justify-content-center">
             
           <p
             className="text-center small-text justify max-width-975 opacity-07 montserrat-font-family"
-            id="contact"
           >
             For technical support, please reach out to our official @FCUBEHelp account on Twitter, <br />or send an email to Frankie@franticfrog.xyz. <br /><br />
             

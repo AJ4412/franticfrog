@@ -64,7 +64,7 @@ const RareSlider = () => {
     ],
   };
   return (
-    <div>
+    <div  id="gallery">
       <section className="overflow-hidden">
         <div className="container mb-5 position-relative pe-0">
           <div className="d-flex flex-column justify-content-center align-items-center">
