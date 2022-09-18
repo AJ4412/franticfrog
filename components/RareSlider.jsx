@@ -213,6 +213,34 @@ const RareSlider = () => {
                 alt="Rare1"
               />
             </div>
+            <div className="rare-img px-sm-3 px-2">
+              <img
+                className="w-100 h-100 object-fit-contain"
+                src="/png/slider14.png"
+                alt="Rare1"
+              />
+            </div>
+            <div className="rare-img px-sm-3 px-2">
+              <img
+                className="w-100 h-100 object-fit-contain"
+                src="/png/slider15.png"
+                alt="Rare1"
+              />
+            </div>
+            <div className="rare-img px-sm-3 px-2">
+              <img
+                className="w-100 h-100 object-fit-contain"
+                src="/png/slider16.png"
+                alt="Rare1"
+              />
+            </div>
+            <div className="rare-img px-sm-3 px-2">
+              <img
+                className="w-100 h-100 object-fit-contain"
+                src="/png/slider17.png"
+                alt="Rare1"
+              />
+            </div>
           </Slider>
         </div>
       </section>

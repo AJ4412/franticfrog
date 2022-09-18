@@ -63,6 +63,8 @@ const Navbar = () => {
                   src="/png/logo.png"
                   alt="logo"
                 />
+               
+
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
                   <a href="#roadmap">ROADMAP</a>
                 </li>
@@ -72,7 +74,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
-                  <a href="#merch">MERCH</a>
+                  <a href="#roadmap">HISTORY</a>
                 </li>
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
@@ -80,7 +82,7 @@ const Navbar = () => {
                 </li>
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
-                  <a href="#contact">CONTACT</a>
+                  <a href="https://polygonscan.com/address/0xbb45c37a3e97433b0483300c8ed2749b9a08c6a2">CONTRACT</a>
                 </li>
               </div>
               <div>
@@ -90,7 +92,7 @@ const Navbar = () => {
                   }}
                   target="_blank"
                 >
-                  <a href="">
+                  <a href="https://discord.gg/CSpah2M9cp">
                     <span className="mx-2">
                       <DiscordIcon />
                     </span>
@@ -102,7 +104,7 @@ const Navbar = () => {
                   }}
                   target="_blank"
                 >
-                  <a href="">
+                  <a href="https://instagram.com/nervousgorillafaceteam">
                     <span className="mx-2">
                       <InstagramIcon />
                     </span>
@@ -114,7 +116,7 @@ const Navbar = () => {
                   }}
                   target="_blank"
                 >
-                  <a href="">
+                  <a href="https://twitter.com/NGFTofficial">
                     <span className="mx-2">
                       <TwitterIcon />
                     </span>
@@ -123,11 +125,11 @@ const Navbar = () => {
 
                 <Link
                   href={{
-                    pathname: "https://opensea.io/NervousGorillaFaceTeam",
+                    pathname: "https://opensea.io/collection/frantic-frog",
                   }}
                   target="_blank"
                 >
-                  <a href="">
+                  <a href="https://opensea.io/collection/frantic-frog">
                     <span className="mx-2">
                       <ShipIcon />
                     </span>
@@ -209,15 +211,28 @@ const Navbar = () => {
                       </a>
                     </span>
                   </li>
+                  <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
+                    <span
+                      className="py-2 py-sm-4 d-inline-block cursor-pointer"
+                      onClick={() => setShowOverlay(false)}
+                    >
+                      <a
+                        href="https://etherscan.io/address/0x34b298f03120ca3ecff04e5bfebccf3550baca56"
+                        className="nav-link fs-2 text-white text-decoration-none"
+                      >
+                        CONTRACT
+                      </a>
+                    </span>
+                  </li>
                 </ul>
                 <div className="link">
                   <Link
-                    href={{
+                     href={{
                       pathname: "https://discord.gg/CSpah2M9cp",
                     }}
                     target="_blank"
                   >
-                    <a href="">
+                    <a href="https://discord.gg/CSpah2M9cp">
                       <span className="mx-2">
                         <DiscordIcon />
                       </span>
@@ -229,7 +244,7 @@ const Navbar = () => {
                     }}
                     target="_blank"
                   >
-                    <a href="">
+                    <a href="https://instagram.com/nervousgorillafaceteam">
                       <span className="mx-2">
                         <InstagramIcon />
                       </span>
@@ -241,7 +256,7 @@ const Navbar = () => {
                     }}
                     target="_blank"
                   >
-                    <a href="">
+                    <a href="https://twitter.com/NGFTofficial">
                       <span className="mx-2">
                         <TwitterIcon />
                       </span>
@@ -250,11 +265,11 @@ const Navbar = () => {
 
                   <Link
                     href={{
-                      pathname: "https://opensea.io/NervousGorillaFaceTeam",
+                      pathname: "https://opensea.io/collection/nervous-gorilla-face-team-ngft",
                     }}
                     target="_blank"
                   >
-                    <a href="">
+                    <a href="https://opensea.io/collection/nervous-gorilla-face-team-ngft">
                       <span className="mx-2">
                         <ShipIcon />
                       </span>
@@ -273,7 +288,7 @@ const Navbar = () => {
                 alt="logo"
               />
               <div className="d-flex align-items-center">
-                {" "}
+                {/* {" "} */}
                 <div>
                   <Link
                     href={{
@@ -281,8 +296,8 @@ const Navbar = () => {
                     }}
                     target="_blank"
                   >
-                    {" "}
-                    <a href="">
+                    {/* {" "} */}
+                    <a href='https://discord.gg/CSpah2M9cp'>
                       <span className="mx-sm-2 mx-1 ">
                         <DiscordIcon />
                       </span>
@@ -290,11 +305,11 @@ const Navbar = () => {
                   </Link>
                   <Link
                     href={{
-                      pathname: "https://instagram.com/nervousgorillafaceteam ",
+                      pathname: "https://instagram.com/nervousgorillafaceteam",
                     }}
                     target="_blank"
                   >
-                    <a href="">
+                    <a href="https://instagram.com/nervousgorillafaceteam">
                       <span className="mx-sm-2 mx-1">
                         <InstagramIcon />
                       </span>
@@ -306,7 +321,7 @@ const Navbar = () => {
                     }}
                     target="_blank"
                   >
-                    <a href="">
+                    <a href="https://twitter.com/NGFTofficial">
                       <span className="mx-sm-2 mx-1 ">
                         <TwitterIcon />
                       </span>
@@ -315,11 +330,11 @@ const Navbar = () => {
 
                   <Link
                     href={{
-                      pathname: "https://opensea.io/NervousGorillaFaceTeam  ",
+                      pathname: "https://opensea.io/collection/nervous-gorilla-face-team-ngft",
                     }}
                     target="_blank"
                   >
-                    <a href="">
+                    <a href="https://opensea.io/collection/nervous-gorilla-face-team-ngft">
                       <span className="mx-sm-2 mx-1 ">
                         <ShipIcon />
                       </span>

@@ -20,7 +20,7 @@ const RoadMap = () => {
               <h2 className="small-heading montserrat-font-family">GIVEAWAY</h2>
               <p className="small-text montserrat-font-family opacity-07">
                 Spread the word! Once we reach 5000 Discord members we are going
-                to give away 3 FREE our Nervous Gorilla Faces randomly to
+                to give away 3 FREE our FRANTIC FROGS Faces randomly to
                 members on Discord. As soon as we reach 10.000 we will give 5
                 more! With 30.000 members on Discord we will giveaway 10 more
                 randomly to Discord members.
@@ -40,7 +40,7 @@ const RoadMap = () => {
               <h2 className="small-heading montserrat-font-family">PRESALE</h2>
               <p className="small-text montserrat-font-family opacity-07">
                 22.02.2022 9PM EST (3AM CET) Minting starts on our Website. 2000
-                Nervous Gorilla Faces of our Team with a price of 0,08 ETH. Face
+                FRANTIC FROGS Faces of our Team with a price of 0,08 ETH. Face
                 reveal after 2 days! (Don’t panic)
               </p>
             </div>
@@ -83,7 +83,7 @@ const RoadMap = () => {
                 PUBLIC SALE{" "}
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                48h after Presale 3000 Nervous Gorilla Faces will be released
+                48h after Presale 3000 FRANTIC FROGS Faces will be released
                 with price of 0,15 ETH. Let the world see those faces!
               </p>
             </div>
@@ -125,9 +125,9 @@ const RoadMap = () => {
                 2nd RELEASE
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                The rest of our Nervous Gorilla Faces will be released as soon
+                The rest of our FRANTIC FROGS Faces will be released as soon
                 as we sold out on first public sale, to fulfill the team. 5000
-                of the last faces you will get for the price of 0,2eth.
+                of the last faces you will get for the price of 0,3 ETH.
               </p>
             </div>
           </div>

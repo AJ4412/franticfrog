@@ -9,6 +9,8 @@ import NervousGorilla from "./NervousGorilla";
 import RareSlider from "./RareSlider";
 import RoadMap from "./RoadMap";
 import Team from "./Team";
+import Creator from "./Creator";
+import Contact from "./Contact"
 
 const Home = () => {
   return (
@@ -17,11 +19,11 @@ const Home = () => {
       <Hero />
       <NervousGorilla />
       <RareSlider />
-      <RoadMap />
       <Merch />
-      <Celebrity />
+      <RoadMap />
       <Team />
-      <JoinCommunity />
+      <Creator />
+      <Contact />
       <Footer />
     </>
   );

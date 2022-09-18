@@ -1,10 +1,5 @@
 import React from "react";
 
-// import Team1 from "../assets/png/team1.png";
-// import Team2 from "../assets/png/team2.png";
-// import Team3 from "../assets/png/team3.png";
-// import Team4 from "../assets/png/team4.png";
-// import DiscordImg from "../assets/png/teamdiscord.png";
 import Link from "next/link";
 import { withRouter } from "next/router";
 import TeamSlider from "./TeamSlider";
@@ -29,10 +24,10 @@ const Team = () => {
                 alt="Team1"
               />
               <h1 className="team-heading kanit-font-family text-center pt-2">
-                B.165
+                DIANE
               </h1>
               <p className="small-text opacity-07  text-center">
-                FOUNDER & DESIGNER
+                CREATIVE DIRECTOR
               </p>
               {/* <div className="d-flex justify-content-center">
                 {" "}
@@ -63,9 +58,9 @@ const Team = () => {
                 alt="Team1"
               />
               <h1 className="team-heading kanit-font-family text-center pt-2">
-                ANGIE
+                EDWIN
               </h1>
-              <p className="small-text opacity-07  text-center">CO-FOUNDER</p>
+              <p className="small-text opacity-07  text-center">CHIEF COOK AND BOTTLE WASHER</p>
               {/* <div className="d-flex justify-content-center">
                 {" "}
                 <Link
@@ -113,10 +108,10 @@ const Team = () => {
                 alt="Team1"
               />
               <h1 className="team-heading kanit-font-family text-center pt-2">
-                JOHNNY BRAVO
+                FRANKIE
               </h1>
               <p className="small-text opacity-07  text-center">
-                CELEBRITY SCOUT
+                SUPER HERO
               </p>
               {/* <div className="d-flex justify-content-center">
                 {" "}
@@ -153,6 +148,7 @@ const Team = () => {
               </div> */}
             </div>
           </div>
+          
         </div>
         <div className="row d-none justify-content-center">
           <div

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Axios from "axios";
 import useSWR from 'swr'
+
+import cors from "cors";
 // import Video from "../assets/video/hero.mp4";
 import Timer from "./common/Timer";
 import {Box, Container, Divider, IconButton, Stack} from "@mui/material";
@@ -27,18 +29,20 @@ const Hero = () => {
 
   useEffect(() => {
     fetch_data();
-    fetch_supply();
-    demo();
+    connect_wallet();
+    
   }, [])
   const [mintNumber,setMintNumber] = useState(1);
+  const[mintingcount, setmintingcount] = useState(1)
   const [totalsupply, settotalsupply] = useState(0);
   const [price, set_price] = useState(0);
   // const [total, set_total] = useState(0.2);
   // set_total(mintNumber*price);
-  let total = mintNumber * price+0.000000000000001;
-  const onMintNumberChange = (e) => {
-    setMintNumber(+e.target.value);
-  }
+  let total = mintNumber * price;
+  
+  // const onMintNumberChange = (e) => {
+  //   setMintNumber(+e.target.value);
+  // }
 
   const mintButtonClickHandler = () => {
     sale_controller();
@@ -67,8 +71,8 @@ const Hero = () => {
       web3.eth.net.getId().then((result) => { 
     
       console.log("Network id: "+result)
-      if(result !== 1){
-          alert("Wrong Network Selected. Select Ethemerun mainnet");
+      if(result !== 137){
+          alert("Wrong Network Selected. Select Polygon Mainnet");
         }
       })
       set_walletstatus("Wallet Connected");
@@ -91,23 +95,21 @@ const Hero = () => {
     }) 
 }
 
-async function fetch_data(){
-
-    const web3 = new Web3(speedy_nodes);
-    const contract = new web3.eth.Contract(contract_abi, contract_address);
-    //await Web3.givenProvider.enable()
-
-    contract.methods.Presale_status().call((err,result) => {
-        console.log("error: "+err);
-        if(result===true){
-           set_price(0.06);
-        }
-        else{
-          set_price(0.1);
-        }
-    })  
-   }
-
+async function fetch_data() {
+  const web3 = new Web3(speedy_nodes);
+  const contract = new web3.eth.Contract(contract_abi, contract_address);
+  //await Web3.givenProvider.enable()
+  set_price(0.005);
+  // contract.methods.Presale_status().call((err,result) => {
+  //     console.log("error: "+err);
+  //  //   if(result===true){
+  //  //      set_price(0.03);
+  //   //  }
+  //   //  else{
+  //       set_price(0.079);
+  //   //  }
+  // })
+}
 
 
 
@@ -132,8 +134,11 @@ async function fetch_data(){
       "Not enough tokens left",
       "incorrect ether amount",
       "5 tokens per wallet allowed in presale",
-      "10 tokens per wallet allowed in publicsale"
-
+      "10 tokens per wallet allowed in publicsale",
+      "Invalid merkle proof",
+      "Not enough tokens allowed in current phase",
+      "Sold Out",
+      "No more tokens left in current phase"
       
     ]
   
@@ -144,43 +149,13 @@ async function fetch_data(){
       }
     }
   } 
-  function sale_controller(){
-      const web3 = new Web3(speedy_nodes);
-      const contract = new web3.eth.Contract(contract_abi, contract_address);
-      //await Web3.givenProvider.enable()
-      console.log("error: i am in fetch ");
-      contract.methods.Presale_status().call((err,result) => {
-          console.log("error: "+err);
-          console.log(result)
-          if(result===true){
-            presalemint_nft();
-          
-            
-          }
-          else{
-            mint_nft();
-          }
-      })
-    }
-
-
-    // async function presalemint_test(){
-     
-    //     const res = await fetch(`https://ux16dx58qa.execute-api.us-east-1.amazonaws.com/proof/0x5DE064024c5b898C016059B5d4c94Fc42cc8579b`)
-    //     const data = await res.json()
-      
-    //    console.log(data);
-
-    // }
-
-
-
-    async function demo(){
-      let res = await fetch("https://ux16dx58qa.execute-api.us-east-1.amazonaws.com/proof/0x5DE064024c5b898C016059B5d4c94Fc42cc8579b");
-       console.log(res);
-       let proof = await res.json();
-       console.log(proof);
-    }
+  function sale_controller() {
+    const web3 = new Web3(speedy_nodes);
+    const contract = new web3.eth.Contract(contract_abi, contract_address);
+    //await Web3.givenProvider.enable()
+    console.log("error: i am in fetch ");
+     mint_nft();
+  }
 
     async function presalemint_nft(){
 
@@ -194,8 +169,6 @@ async function fetch_data(){
         console.log("addresses[0]: "+addresses[0])
         // console.log("addresses[1]: "+addresses[1])
         // console.log("Default address: "+await web3.eth.defaultAccount)
-
-        //test end
         try {
         const estemated_Gas = await contract.methods.buy_presale(mintNumber).estimateGas({
           from : address, 
@@ -220,44 +193,47 @@ async function fetch_data(){
       }
   
   }
-  async function mint_nft(){
+  async function mint_nft() {
+    if (Web3.givenProvider) {
+      const web3 = new Web3(Web3.givenProvider);
+      await Web3.givenProvider.enable();
+      const contract = new web3.eth.Contract(contract_abi, contract_address);
 
-    if(Web3.givenProvider ){ 
-
-        const web3 = new Web3(Web3.givenProvider);
-        await Web3.givenProvider.enable()
-        const contract = new web3.eth.Contract(contract_abi, contract_address);
-  
-        const addresses = await web3.eth.getAccounts()
-        const address = addresses[0]
-        console.log("addresses[0]: "+addresses[0])
-        // console.log("addresses[1]: "+addresses[1])
-        // console.log("Default address: "+await web3.eth.defaultAccount)
-        try {
-          const estemated_Gas = await contract.methods.buy(mintNumber).estimateGas({
-            from : address, 
-            value: web3.utils.toWei(total.toString(),"ether"),
+      const addresses = await web3.eth.getAccounts();
+      const address = addresses[0];
+      console.log("addresses[0]: " + addresses[0]);
+      // console.log("addresses[1]: "+addresses[1])
+      // console.log("Default address: "+await web3.eth.defaultAccount)
+      try {
+        const estemated_Gas = await contract.methods
+          .mint(mintNumber)
+          .estimateGas({
+            from: address,
+            value: web3.utils.toWei(total.toString(), "ether"),
             maxPriorityFeePerGas: null,
-            maxFeePerGas: null
+            maxFeePerGas: null,
           });
-          console.log(estemated_Gas)
-          const result = await contract.methods.buy(mintNumber).send({
-            from : address,
-            value: web3.utils.toWei(total.toString(),"ether"),
-            gas: estemated_Gas,
-            maxPriorityFeePerGas: null,
-            maxFeePerGas: null
-          })
-        } catch (error) {
-          show_error_alert(error);
-        }
-      
-       // await contract.methods.tokenByIndex(i).call();
-      }}
+        console.log(estemated_Gas);
+        const result = await contract.methods.buy(mintNumber).send({
+          from: address,
+          value: web3.utils.toWei(total.toString(), "ether"),
+          gas: estemated_Gas,
+          maxPriorityFeePerGas: null,
+          maxFeePerGas: null,
+        });
+      } catch (error) {
+        show_error_alert(error);
+      }
+
+      // await contract.methods.tokenByIndex(i).call();
+    }
+  }
 
       function maxnftbutton(){
         setMintNumber(20);
       }
+
+
 
    const onMinusClickHandler = () => {
         if (mintNumber <= 1) return;
@@ -273,20 +249,13 @@ async function fetch_data(){
 
 
   return (
+    
     <div className="hero-section position-relative">
-      <video
-        className="h-100 w-100 object-cover"
-        src="/video/hero.mp4"
-        loop
-        muted
-        playsInline
-        autoPlay={true}
-        width="100%"
-      />
       <div className="hero-sale-section px-2">
         <div className="text-center">
-
-     
+        <div>
+        <img src="/video/hero.gif"/>
+        </div>
         <Stack direction={'row'} justifyContent={'space-between'} sx={{
                                 fontSize: {xs: '16px', lg: "23px"},
                                 color: '#fff',
@@ -320,21 +289,20 @@ async function fetch_data(){
                             </Stack>
                             <Divider color={'red'} sx={{height: '2px', opacity: '.25'}}/>
 
-          <button onClick={mintButtonClickHandler} className="mint-button px-5 py-2 my-4">Mint</button>
+                            <button onClick={mintButtonClickHandler} className="mint-button px-5 py-2 my-4">Mint</button>
+                            {/* <button onClick={mintButtonClickHandler}>MINT</button> */}
+                    {/* <input value={mintNumber}
+                        onChange={e => {
+                          setMintNumber(e.currentTarget.value); }}
+                                    type="text" placeholder="Amount" /> */}
+
+
         </div>
         <div className="sale-section px-sm-5 py-2 ">
           <div className="container">
             <div className="row">
-              <div className="col-6 ">
-                <p className="sale-heading montserrat-font-family text-center mb-1">
-                  PRESALE
-                </p>
-                <p className="montserrat-font-family sale-text mb-0 text-center">
-                  February 22nd, 9PM EST
-                </p>
-                <Timer date="23" sale="PRESALE" />
-              </div>
-              <div className="col-6 ">
+              
+              <div className="col-12 ">
                 <p className="sale-heading montserrat-font-family text-center mb-1">
                   PUBLIC SALE
                 </p>

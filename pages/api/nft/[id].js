@@ -15,8 +15,8 @@ export default function getNftById(req, res){
 
 
     // res.json({
-    //     name: "Polar-Verse #"+ req.query.id,
-    //     description: "The Polar-Verse NFT",
+    //     name: "NGFT #"+ req.query.id,
+    //     description: "FRANTIC FROGS Face Team NGFT",
     //     image: "ipfs://QmSG6X29ZGu8EDKzd76r22NJminoPk3exgcLVAJtHa67U3/"
     // })
 
