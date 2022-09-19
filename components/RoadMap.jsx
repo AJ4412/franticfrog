@@ -192,7 +192,7 @@ const RoadMap = () => {
                 LOTTERY
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-              FCUBE LIKES EXCITEMENT - When the collection is sold out there will be a lottery for FranticFrog NFT owners for something special.  Who knows?  The sky's the limit, perhaps a FCUBE BESPOKE JACKET or maybe something so grand as an EV.
+              FCUBE LIKES EXCITEMENT - When the collection is sold out there will be a lottery for FranticFrog NFT owners for something special.  Who knows?  The sky&apos;s the limit, perhaps a FCUBE BESPOKE JACKET or maybe something so grand as an EV.
               </p>
             </div>
           </div>
@@ -212,7 +212,7 @@ const RoadMap = () => {
                 JOIN THE JOURNEY
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-              FCUBE KNOWS THE IMPORTANCE OF BEST BUDS - Always looking for good partners to help grow the community and the brand. <br /><br /> Hey Ice Cube, be in touch and make Frankie's dream come true!!!
+              FCUBE KNOWS THE IMPORTANCE OF BEST BUDS - Always looking for good partners to help grow the community and the brand. <br /><br /> Hey Ice Cube, be in touch and make Frankie&apos;s dream come true!!!
               </p>
             </div>
           </div>
