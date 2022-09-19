@@ -14,17 +14,14 @@ const Merch = () => {
             MERCH
           </h1>
           <p className="small-text montserrat-font-family opacity-07 pe-sm-5">
-            This jacket is the first product of the NGFT Merchandise. Owning a
-            @nervousgorillafaceteam NFT you have opportunity to get one of hand
-            painted jacket with your own gorilla face on it. Created by our
-            teammate and good friend{" "}
-            <a
+          Here is the soft opening of our merchandise store.  If you would like to make a purchase please email us at frankie@franticfrog.xyz{" "}
+            {/* <a
               className=" text-white"
               href=" https://instagram.com/aleksandar94art?utm_medium=copy_link "
               target="_blank"
             >
               @aleksandar94art
-            </a>
+            </a> */}
           </p>
         </div>
         <div

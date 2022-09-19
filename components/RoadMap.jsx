@@ -12,18 +12,14 @@ const RoadMap = () => {
           <div className="d-flex">
             <div className="">
               <p className="mb-0  road-map_cirlce small-heading montserrat-font-family">
-                10%
+                FF
               </p>
             </div>
 
             <div className="ms-4">
-              <h2 className="small-heading montserrat-font-family">GIVEAWAY</h2>
+              <h2 className="small-heading montserrat-font-family">BIRTH</h2>
               <p className="small-text montserrat-font-family opacity-07">
-                Spread the word! Once we reach 5000 Discord members we are going
-                to give away 3 FREE our FRANTIC FROGS Faces randomly to
-                members on Discord. As soon as we reach 10.000 we will give 5
-                more! With 30.000 members on Discord we will giveaway 10 more
-                randomly to Discord members.
+              FRANTIC FROG CONCEIVED DECEMBER 2021.
               </p>
             </div>
           </div>
@@ -32,16 +28,15 @@ const RoadMap = () => {
           <div className="d-flex">
             <div className="">
               <p className="mb-0  road-map_cirlce small-heading montserrat-font-family">
-                20%
+                FF
               </p>
             </div>
 
             <div className="ms-4">
-              <h2 className="small-heading montserrat-font-family">PRESALE</h2>
+              <h2 className="small-heading montserrat-font-family">LAUNCHED</h2>
               <p className="small-text montserrat-font-family opacity-07">
-                22.02.2022 9PM EST (3AM CET) Minting starts on our Website. 2000
-                FRANTIC FROGS Faces of our Team with a price of 0,08 ETH. Face
-                reveal after 2 days! (Don’t panic)
+              FRANTIC FROG ON OPENSEA AND FIRST NFTS PURCHASED SEPTEMBER 2022.
+              FRANTIC FROG WEBSITE AND dAPP ON INTERNET OCTOBER 2022.
               </p>
             </div>
           </div>
@@ -53,19 +48,16 @@ const RoadMap = () => {
           <div className="d-flex">
             <div className="">
               <p className="mb-0  road-map_cirlce small-heading montserrat-font-family">
-                30%
+                FF
               </p>
             </div>
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                1st REWARD
+                SOCIAL MEDIA
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                After successful presale our teammates will be rewarded with a
-                chance to win our 2nd giveaway. As soon as the presale is sold
-                out we decided to give 10x Oculus Quest 2 (256GB) VR-headset
-                randomly to 10 holders.
+              FRANTIC FROG ON FACEBOOK, INSTAGRAM, TWITTER AND ON THE FCUBE DISCORD - EXPECTED NOVEMBER 2022.  Join the Frantic Frog community and be a part of a global network of like-minded people from all walks of life. 
               </p>
             </div>
           </div>
@@ -74,17 +66,16 @@ const RoadMap = () => {
           <div className="d-flex">
             <div className="">
               <p className="mb-0  road-map_cirlce small-heading montserrat-font-family">
-                40%
+                FF
               </p>
             </div>
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                PUBLIC SALE{" "}
+              COMMUNITY{" "}
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                48h after Presale 3000 FRANTIC FROGS Faces will be released
-                with price of 0,15 ETH. Let the world see those faces!
+              FCUBE LOVES PEOPLE AND HE LOVES HIS COMMUNITY - A WET HUG TO ALL - The community will gain access to our exclusive FCUBE knee-deep rewards program.  Give away FCUBE goodies will be awarded to friendly active participants.  Our program will continually evolve as we look at new ways to engage the community.
               </p>
             </div>
           </div>
@@ -96,18 +87,16 @@ const RoadMap = () => {
           <div className="d-flex">
             <div className="">
               <p className="mb-0  road-map_cirlce small-heading montserrat-font-family">
-                50%
+                FF
               </p>
             </div>
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                2st REWARD
+                PARTY
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                Halfway there! As soon as our 5000 Faces are sold out we decided
-                to give reward to their holders 300.000$ back ,to keep them
-                motivated.
+              FCUBE LIKES FUN - GATHERINGS FOR HOLDERS OF NFTS -  Engaging events such as a Lily Pad Party and a gathering to enjoy Fly-loffels to be organized.  Once 50% of the NFTS are purchased FCUBE will have a celebratory party for all owners at a special place to be determined.
               </p>
             </div>
           </div>
@@ -116,18 +105,16 @@ const RoadMap = () => {
           <div className="d-flex">
             <div className="">
               <p className="mb-0  road-map_cirlce small-heading montserrat-font-family">
-                60%
+                FF
               </p>
             </div>
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                2nd RELEASE
+                HUMANITARIAN PROJECTS
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                The rest of our FRANTIC FROGS Faces will be released as soon
-                as we sold out on first public sale, to fulfill the team. 5000
-                of the last faces you will get for the price of 0,3 ETH.
+              FCUBE LIKES TO DO GOOD - 10% of profits will be earmarked to help causes such as WaterAid, which transforms lives by improving access to clean water, hygiene and sanitation in the poorest communities worldwide, and Rainforest Trust, which funds over 50 projects to protect frogs around the world.  Owners of FranticFrog NFTS will be able to vote amongst several 501(c)(3) not-for-profits nominated to share Frankie’s largesse.
               </p>
             </div>
           </div>
@@ -139,17 +126,17 @@ const RoadMap = () => {
           <div className="d-flex">
             <div className="">
               <p className="mb-0  road-map_cirlce small-heading montserrat-font-family">
-                70%
+                FF
               </p>
             </div>
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                TEAMWORK AND SUPPORT
+                MERCHANDISE
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                150.000$ of our earned money will be donated to build schools
-                and water wells in the third world countries.
+              FCUBE LIKES TO LOOK GOOD - FCube fashions and merchandise will be made available to purchase online.  Keep checking for new products.
+              
               </p>
             </div>
           </div>
@@ -158,18 +145,16 @@ const RoadMap = () => {
           <div className="d-flex">
             <div className="">
               <p className="mb-0  road-map_cirlce small-heading montserrat-font-family">
-                80%
+                FF
               </p>
             </div>
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                TIME FOR GLORY
+                SUPERHERO POWERS
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                In honor of our success, our team is going to be a part of
-                METAVERSE. As soon as we completely sold out , we will purchase
-                the SANDBOX land to start legacy and make history.
+              FCUBE LIKES TO SHARE HIS SUPER HERO POWERS - The future will hold an animated superhero movie where FCube will disclose some of his more spectacular feats.
               </p>
             </div>
           </div>
@@ -181,20 +166,16 @@ const RoadMap = () => {
           <div className="d-flex">
             <div className="">
               <p className="mb-0  road-map_cirlce small-heading montserrat-font-family">
-                90%
+                FF
               </p>
             </div>
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                LEADERSHIP
+                GAMES
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                LEADER of our team (most paid face in our collection at midnight
-                of first day in the month ) will be rewarded with 10% off of his
-                price every 1st day in month. Also, his face will be framed on
-                our website and also in our MUSEUM in METAVERSE.
-              </p>
+              FCUBE LIKES A CHALLENGE - Games will be developed.</p>
             </div>
           </div>
         </div>
@@ -202,21 +183,16 @@ const RoadMap = () => {
           <div className="d-flex">
             <div className="">
               <p className="mb-0  road-map_cirlce small-heading montserrat-font-family">
-                100%
+                FF
               </p>
             </div>
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                NGFT CHARITY
+                LOTTERY
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                We’ve stepped into the future but we don’t forget those who
-                haven’t had the opportunity to do the same. This is why NGFT
-                gonna donate to those who need it the most, because we believe
-                that everyone deserves a chance for a better future. Our team
-                will give 20% of our royalty money every month to different
-                charities all over the world
+              FCUBE LIKES EXCITEMENT - When the collection is sold out there will be a lottery for FranticFrog NFT owners for something special.  Who knows?  The sky's the limit, perhaps a FCUBE BESPOKE JACKET or maybe something so grand as an EV.
               </p>
             </div>
           </div>
@@ -233,20 +209,19 @@ const RoadMap = () => {
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                CELEBRATION TIME
+                JOIN THE JOURNEY
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                NGFT will make a SECRET celebration party only for holders to
-                celebrate with teammates and get to know them in person.
+              FCUBE KNOWS THE IMPORTANCE OF BEST BUDS - Always looking for good partners to help grow the community and the brand. <br /><br /> Hey Ice Cube, be in touch and make Frankie's dream come true!!!
               </p>
             </div>
           </div>
         </div>
       </div>
-
+{/* 
       <p className="small-heading montserrat-font-family text-center pb-sm-5 pb-2">
         ROADMAP 2.0 will appear immediately after the first one is completed.
-      </p>
+      </p> */}
     </div>
   );
 };

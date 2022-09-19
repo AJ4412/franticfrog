@@ -11,6 +11,7 @@ import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
 import {PrimaryButton} from "./common/PrimaryButton";
 import Web3 from "web3";
 import Web3Modal from "web3modal";
+import swal from "sweetalert";
 import { contract_address, contract_abi, buy_price, speedy_nodes} from '../config';
 
 const Hero = () => {
@@ -29,12 +30,11 @@ const Hero = () => {
 
   useEffect(() => {
     fetch_data();
-    connect_wallet();
-    
   }, [])
   const [mintNumber,setMintNumber] = useState(1);
   const[mintingcount, setmintingcount] = useState(1)
   const [totalsupply, settotalsupply] = useState(0);
+  const [connected, setConnected] = useState(false);
   const [price, set_price] = useState(0);
   // const [total, set_total] = useState(0.2);
   // set_total(mintNumber*price);
@@ -68,12 +68,16 @@ const Hero = () => {
     
       console.log("Network id: "+result)
       if(result !== 137){
-          alert("Wrong Network Selected. Select Polygon Mainnet");
+          swal("Wrong Network Selected. Select Polygon Mainnet");
+        }
+        else{
+          set_walletstatus("Wallet Connected");
+          setConnected(true);
         }
       })
-      set_walletstatus("Wallet Connected");
+      
     }else{
-      alert("Web3 Not Found");
+      swal("Web3 Not Found");
     }
 
   }
@@ -138,13 +142,14 @@ async function fetch_data() {
       
     ]
   
-    for(let i=0;i<error_list.length;i++){
-      if(temp_error.includes(error_list[i])){
-       // set ("Transcation Failed")
-        alert(error_list[i]);
+    for (let i = 0; i < error_list.length; i++) {
+      if (temp_error.includes(error_list[i])) {
+        // set ("Transcation Failed")
+        // alert(error_list[i]);
+        swal("Alert!", error_list[i], "warning");
       }
     }
-  } 
+  }
   function sale_controller() {
     const web3 = new Web3(speedy_nodes);
     const contract = new web3.eth.Contract(contract_abi, contract_address);
@@ -248,15 +253,18 @@ async function fetch_data() {
                                 </Box>
                             </Stack>
                             <Divider color={'red'} sx={{height: '2px', opacity: '.25'}}/>
-
-                            <button onClick={mintButtonClickHandler} className="mint-button px-5 py-2 my-4">Mint</button>
+                            {connected ? (
+                              <button className="mint-button px-5 py-2 my-4">Connected</button>
+                            ) : (
+                              <button onClick={connect_wallet} className="mint-button px-5 py-2 my-4">Connect Wallet</button>
+                              )}          
+                            {" "} {" "} {" "}
+                            <button onClick={mint_nft} className="mint-button px-5 py-2 my-4">Mint</button>
                             {/* <button onClick={mintButtonClickHandler}>MINT</button> */}
                     {/* <input value={mintNumber}
                         onChange={e => {
                           setMintNumber(e.currentTarget.value); }}
                                     type="text" placeholder="Amount" /> */}
-
-
         </div>
         <div className="sale-section px-sm-5 py-2 ">
           <div className="container">
