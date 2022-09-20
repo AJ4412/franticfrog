@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Head from 'next/head';
 import Axios from "axios";
 import useSWR from 'swr'
 
@@ -213,7 +214,8 @@ async function fetch_data() {
     }
 
 
-  return (
+  return
+  (
     
     <div className="hero-section position-relative">
       <div className="hero-sale-section px-2">

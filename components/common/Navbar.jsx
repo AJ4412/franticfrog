@@ -98,11 +98,11 @@ const Navbar = () => {
               <div>
                 <Link
                   href={{
-                    pathname: "https://discord.gg/CSpah2M9cp",
+                    pathname: "https://discord.gg/7Cvn8fWj",
                   }}
                   target="_blank"
                 >
-                  <a href="https://discord.gg/CSpah2M9cp">
+                  <a href="https://discord.gg/7Cvn8fWj">
                     <span className="mx-2">
                       <DiscordIcon />
                     </span>
@@ -110,11 +110,11 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href={{
-                    pathname: "https://instagram.com/nervousgorillafaceteam",
+                    pathname: "https://www.instagram.com/frankiefranticfrog/",
                   }}
                   target="_blank"
                 >
-                  <a href="https://instagram.com/nervousgorillafaceteam">
+                  <a href="https://www.instagram.com/frankiefranticfrog/">
                     <span className="mx-2">
                       <InstagramIcon />
                     </span>
@@ -122,11 +122,11 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href={{
-                    pathname: "https://twitter.com/NGFTofficial",
+                    pathname: "https://twitter.com/frankie_frantic",
                   }}
                   target="_blank"
                 >
-                  <a href="https://twitter.com/NGFTofficial">
+                  <a href="https://twitter.com/frankie_frantic">
                     <span className="mx-2">
                       <TwitterIcon />
                     </span>
@@ -251,11 +251,11 @@ const Navbar = () => {
                 <div className="link">
                   <Link
                      href={{
-                      pathname: "https://discord.gg/CSpah2M9cp",
+                      pathname: "https://discord.gg/7Cvn8fWj",
                     }}
                     target="_blank"
                   >
-                    <a href="https://discord.gg/CSpah2M9cp">
+                    <a href="https://discord.gg/7Cvn8fWj">
                       <span className="mx-2">
                         <DiscordIcon />
                       </span>
@@ -263,11 +263,11 @@ const Navbar = () => {
                   </Link>
                   <Link
                     href={{
-                      pathname: "https://instagram.com/nervousgorillafaceteam",
+                      pathname: "https://www.instagram.com/frankiefranticfrog/",
                     }}
                     target="_blank"
                   >
-                    <a href="https://instagram.com/nervousgorillafaceteam">
+                    <a href="https://www.instagram.com/frankiefranticfrog/">
                       <span className="mx-2">
                         <InstagramIcon />
                       </span>
@@ -275,11 +275,11 @@ const Navbar = () => {
                   </Link>
                   <Link
                     href={{
-                      pathname: "https://twitter.com/NGFTofficial",
+                      pathname: "https://twitter.com/frankie_frantic",
                     }}
                     target="_blank"
                   >
-                    <a href="https://twitter.com/NGFTofficial">
+                    <a href="https://twitter.com/frankie_frantic">
                       <span className="mx-2">
                         <TwitterIcon />
                       </span>
@@ -315,12 +315,12 @@ const Navbar = () => {
                 <div>
                   <Link
                     href={{
-                      pathname: "https://discord.gg/CSpah2M9cp ",
+                      pathname: "https://discord.gg/7Cvn8fWj ",
                     }}
                     target="_blank"
                   >
                     {/* {" "} */}
-                    <a href='https://discord.gg/CSpah2M9cp'>
+                    <a href='https://discord.gg/7Cvn8fWj'>
                       <span className="mx-sm-2 mx-1 ">
                         <DiscordIcon />
                       </span>
@@ -328,11 +328,11 @@ const Navbar = () => {
                   </Link>
                   <Link
                     href={{
-                      pathname: "https://instagram.com/nervousgorillafaceteam",
+                      pathname: "https://www.instagram.com/frankiefranticfrog/",
                     }}
                     target="_blank"
                   >
-                    <a href="https://instagram.com/nervousgorillafaceteam">
+                    <a href="https://www.instagram.com/frankiefranticfrog/">
                       <span className="mx-sm-2 mx-1">
                         <InstagramIcon />
                       </span>
@@ -340,11 +340,11 @@ const Navbar = () => {
                   </Link>
                   <Link
                     href={{
-                      pathname: "https://twitter.com/NGFTofficial",
+                      pathname: "https://twitter.com/frankie_frantic",
                     }}
                     target="_blank"
                   >
-                    <a href="https://twitter.com/NGFTofficial">
+                    <a href="https://twitter.com/frankie_frantic">
                       <span className="mx-sm-2 mx-1 ">
                         <TwitterIcon />
                       </span>

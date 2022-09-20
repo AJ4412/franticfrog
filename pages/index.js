@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Head from 'next/head';
 // import "../assets/style/common.css";
 
 import Home from "../components/Home";
@@ -33,7 +34,16 @@ export default function Main() {
       behavior: "smooth",
     });
   };
-  return (
+  return <>
+  <Head>
+  <link rel="icon" href="/png/loading.png" />
+    <title>Frantic Frog</title>
+    <meta name='description' content='Frantic Frog is a collection of 10,000 unique Frantic Frog NFTs featuring Frankie, The Frantic Frog amiably known in the community as F Cube. Glide and slippity slide into the NFT tide. Come along for the ride and join the F Cube frantic side.
+
+' />
+  </Head>
+    </>
+  (
     <div>
       {loading ? (
         <Home />
