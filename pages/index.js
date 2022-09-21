@@ -41,6 +41,7 @@ export default function Main() {
         <title>Frantic Frog</title>
         <meta name='description' content='Frantic Frog is a collection of 10,000 unique Frantic Frog NFTs featuring Frankie, The Frantic Frog amiably known in the community as F Cube. Glide and slippity slide into the NFT tide. Come along for the ride and join the F Cube frantic side.' />
       </Head>
+
       <div>
         {
           loading ? (
@@ -48,6 +49,8 @@ export default function Main() {
           ) : (
             <div className="d-flex justify-content-center align-items-center loading flex-column">
               <img className="loading-img" src="/png/loading.gif" alt="logo" />
+
+              <img className="loading-img" src="/png/loading.png" alt="logo" />
             </div>
           )
         }
