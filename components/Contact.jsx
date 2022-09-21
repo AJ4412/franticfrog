@@ -17,6 +17,7 @@ const Contact = () => {
               className=" text-white"
               href="https://twitter.com/frankie_frantic"
               target="_blank"
+              without rel="noreferrer"
             >
               @FCUBEHelp
             </a>{" "} account on Twitter, <br />or send an email to frankie@franticfrog.xyz<br /><br />
