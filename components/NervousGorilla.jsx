@@ -19,7 +19,7 @@ const NervousGorilla = () => {
         </div>
 
         <h1 id="history" className="text-center pb-4 main-heading kanit-font-family ">
-        <br />FRANTIC FROG'S STORY
+        <br />FRANTIC FROG&apos;S STORY
         </h1>
         <div className="d-flex justify-content-center">
           <p
