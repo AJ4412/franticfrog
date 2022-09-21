@@ -6,14 +6,14 @@ import useSWR from 'swr'
 import cors from "cors";
 // import Video from "../assets/video/hero.mp4";
 import Timer from "./common/Timer";
-import {Box, Container, Divider, IconButton, Stack} from "@mui/material";
+import { Box, Container, Divider, IconButton, Stack } from "@mui/material";
 import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined';
 import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
-import {PrimaryButton} from "./common/PrimaryButton";
+import { PrimaryButton } from "./common/PrimaryButton";
 import Web3 from "web3";
 import Web3Modal from "web3modal";
 import swal from "sweetalert";
-import { contract_address, contract_abi, buy_price, speedy_nodes} from '../config';
+import { contract_address, contract_abi, buy_price, speedy_nodes } from '../config';
 
 const Hero = () => {
   // set date to 22 feb 2022 9 hours 0 minutes 0 seconds
@@ -32,15 +32,15 @@ const Hero = () => {
   useEffect(() => {
     fetch_data();
   }, [])
-  const [mintNumber,setMintNumber] = useState(1);
-  const[mintingcount, setmintingcount] = useState(1)
+  const [mintNumber, setMintNumber] = useState(1);
+  const [mintingcount, setmintingcount] = useState(1)
   const [totalsupply, settotalsupply] = useState(0);
   const [connected, setConnected] = useState(false);
   const [price, set_price] = useState(0);
   // const [total, set_total] = useState(0.2);
   // set_total(mintNumber*price);
   let total = mintNumber * price;
-  
+
   // const onMintNumberChange = (e) => {
   //   setMintNumber(+e.target.value);
   // }
@@ -50,71 +50,71 @@ const Hero = () => {
   }
   const [walletstatus, set_walletstatus] = useState("Connect Wallet");
 
-  async function connect_wallet(){
-    if(Web3.givenProvider){
+  async function connect_wallet() {
+    if (Web3.givenProvider) {
       const providerOptions = {
         /* See Provider Options Section */
       };
-      
+
       const web3Modal = new Web3Modal({
         network: "mainnet", // optional
         cacheProvider: true, // optional
         providerOptions // required
       });
-      
+
       const provider = await web3Modal.connect();
       const web3 = new Web3(provider);
 
-      web3.eth.net.getId().then((result) => { 
-    
-      console.log("Network id: "+result)
-      if(result !== 137){
+      web3.eth.net.getId().then((result) => {
+
+        console.log("Network id: " + result)
+        if (result !== 137) {
           swal("Wrong Network Selected. Select Polygon Mainnet");
         }
-        else{
+        else {
           set_walletstatus("Wallet Connected");
           setConnected(true);
         }
       })
-      
-    }else{
+
+    } else {
       swal("Web3 Not Found");
     }
 
   }
 
-  async function fetch_supply(){ 
+  async function fetch_supply() {
     const web3 = new Web3(speedy_nodes);
     const contract = new web3.eth.Contract(contract_abi, contract_address);
     //await Web3.givenProvider.enable()
 
-    contract.methods.totalSupply().call((err,result) => {
-        console.log("error: "+err);
-        if(result != null){
-          settotalsupply(result);
-        }
-    }) 
-}
+    contract.methods.totalSupply().call((err, result) => {
+      console.log("error: " + err);
+      if (result != null) {
+        settotalsupply(result);
+      }
+    })
+  }
 
-async function fetch_data() {
-  const web3 = new Web3(speedy_nodes);
-  const contract = new web3.eth.Contract(contract_abi, contract_address);
-  //await Web3.givenProvider.enable()
-  set_price(0.005);
-  // contract.methods.Presale_status().call((err,result) => {
-  //     console.log("error: "+err);
-  //  //   if(result===true){
-  //  //      set_price(0.03);
-  //   //  }
-  //   //  else{
-  //       set_price(0.079);
-  //   //  }
-  // })
-}
+  async function fetch_data() {
+    const web3 = new Web3(speedy_nodes);
+    const contract = new web3.eth.Contract(contract_abi, contract_address);
+    //await Web3.givenProvider.enable()
+    set_price(0.005);
+    // contract.methods.Presale_status().call((err,result) => {
+    //     console.log("error: "+err);
+    //  //   if(result===true){
+    //  //      set_price(0.03);
+    //   //  }
+    //   //  else{
+    //       set_price(0.079);
+    //   //  }
+    // })
+  }
 
 
 
-  async function show_error_alert(error){
+  async function show_error_alert(error) {
     let temp_error = error.message.toString();
     console.log(temp_error);
     let error_list = [
@@ -140,9 +140,9 @@ async function fetch_data() {
       "Not enough tokens allowed in current phase",
       "Sold Out",
       "No more tokens left in current phase"
-      
+
     ]
-  
+
     for (let i = 0; i < error_list.length; i++) {
       if (temp_error.includes(error_list[i])) {
         // set ("Transcation Failed")
@@ -156,7 +156,7 @@ async function fetch_data() {
     const contract = new web3.eth.Contract(contract_abi, contract_address);
     //await Web3.givenProvider.enable()
     console.log("error: i am in fetch ");
-     mint_nft();
+    mint_nft();
   }
 
   async function mint_nft() {
@@ -195,28 +195,26 @@ async function fetch_data() {
     }
   }
 
-      function maxnftbutton(){
-        setMintNumber(20);
-      }
+  function maxnftbutton() {
+    setMintNumber(20);
+  }
 
 
 
-   const onMinusClickHandler = () => {
-        if (mintNumber <= 1) return;
+  const onMinusClickHandler = () => {
+    if (mintNumber <= 1) return;
 
-        setMintNumber(mintNumber - 1);
-    }
+    setMintNumber(mintNumber - 1);
+  }
 
-    const onPlusClickHandler = () => {
-        if (mintNumber >= 20) return;
+  const onPlusClickHandler = () => {
+    if (mintNumber >= 20) return;
 
-        setMintNumber(mintNumber + 1);
-    }
+    setMintNumber(mintNumber + 1);
+  }
 
 
-  return
-  (
-    
+  return (
     <div className="hero-section position-relative">
       <div className="hero-sale-section px-2">
         <div className="text-center">
@@ -229,41 +227,41 @@ async function fetch_data() {
             alignItems: 'center',
             margin: "4px 32px"
           }}>
-                                <Box>
-                                    Quantity
-                                </Box>
-                                <Stack alignItems={'center'} direction={'row'} spacing={3}>
-                                    <IconButton onClick={onMinusClickHandler} sx={{
-                                        color: '#fff'
-                                    }}>
-                                        <RemoveOutlinedIcon color={'#fff'}/>
-                                    </IconButton>
-                                    <Box>
-                                        {mintNumber}
-                                    </Box>
-                                    <IconButton onClick={onPlusClickHandler} sx={{
-                                        color: '#fff'
-                                    }}>
-                                        <AddOutlinedIcon color={'#fff'}/>
-                                    </IconButton>
+            <Box>
+              Quantity
+            </Box>
+            <Stack alignItems={'center'} direction={'row'} spacing={3}>
+              <IconButton onClick={onMinusClickHandler} sx={{
+                color: '#fff'
+              }}>
+                <RemoveOutlinedIcon color={'#fff'} />
+              </IconButton>
+              <Box>
+                {mintNumber}
+              </Box>
+              <IconButton onClick={onPlusClickHandler} sx={{
+                color: '#fff'
+              }}>
+                <AddOutlinedIcon color={'#fff'} />
+              </IconButton>
 
-                                </Stack>
-                                <Box>
-                                    <PrimaryButton onClick={maxnftbutton}>
-                                        MAX
-                                    </PrimaryButton>
-                                </Box>
-                            </Stack>
-                            <Divider color={'red'} sx={{height: '2px', opacity: '.25'}}/>
-                            {connected ? (
-                              <button className="mint-button px-5 py-2 my-4">Connected</button>
-                            ) : (
-                              <button onClick={connect_wallet} className="mint-button px-5 py-2 my-4">Connect Wallet</button>
-                              )}          
-                            {" "} {" "} {" "}
-                            <button onClick={mint_nft} className="mint-button px-5 py-2 my-4">Mint</button>
-                            {/* <button onClick={mintButtonClickHandler}>MINT</button> */}
-                    {/* <input value={mintNumber}
+            </Stack>
+            <Box>
+              <PrimaryButton onClick={maxnftbutton}>
+                MAX
+              </PrimaryButton>
+            </Box>
+          </Stack>
+          <Divider color={'red'} sx={{ height: '2px', opacity: '.25' }} />
+          {connected ? (
+            <button className="mint-button px-5 py-2 my-4">Connected</button>
+          ) : (
+            <button onClick={connect_wallet} className="mint-button px-5 py-2 my-4">Connect Wallet</button>
+          )}
+          {" "} {" "} {" "}
+          <button onClick={mint_nft} className="mint-button px-5 py-2 my-4">Mint</button>
+          {/* <button onClick={mintButtonClickHandler}>MINT</button> */}
+          {/* <input value={mintNumber}
                         onChange={e => {
                           setMintNumber(e.currentTarget.value); }}
                                     type="text" placeholder="Amount" /> */}
@@ -271,7 +269,7 @@ async function fetch_data() {
         <div className="sale-section px-sm-5 py-2 ">
           <div className="container">
             <div className="row">
-              
+
               <div className="col-12 ">
                 <p className="sale-heading montserrat-font-family text-center mb-1">
                   PUBLIC SALE
