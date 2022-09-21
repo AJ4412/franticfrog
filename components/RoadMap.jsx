@@ -5,7 +5,7 @@ const RoadMap = () => {
   return (
     <div className="container" id="roadmap">
       <h1 className="main-heading kanit-font-family text-center mb-0 pt-lg-3 pt-4 mt-sm-3 pb-sm-5 ">
-        ROADMAP 1.0
+        ROADMAP
       </h1>
       <div className="row py-md-3">
         <div className="col-md-6 mt-5 mt-md-0">
@@ -33,7 +33,7 @@ const RoadMap = () => {
             </div>
 
             <div className="ms-4">
-              <h2 className="small-heading montserrat-font-family">LAUNCHED</h2>
+              <h2 className="small-heading montserrat-font-family">SEPTEMBER</h2>
               <p className="small-text montserrat-font-family opacity-07">
               FRANTIC FROG ON OPENSEA AND FIRST NFTS PURCHASED SEPTEMBER 2022.
               FRANTIC FROG WEBSITE AND dAPP ON INTERNET OCTOBER 2022.
@@ -54,7 +54,7 @@ const RoadMap = () => {
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                SOCIAL MEDIA
+                SEPTEMBER
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
               FRANTIC FROG ON FACEBOOK, INSTAGRAM, TWITTER AND ON THE FCUBE DISCORD - EXPECTED NOVEMBER 2022.  Join the Frantic Frog community and be a part of a global network of like-minded people from all walks of life. 
@@ -209,7 +209,7 @@ const RoadMap = () => {
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                JOIN THE JOURNEY
+              BEST BUDS AND PARTNERS
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
               FCUBE KNOWS THE IMPORTANCE OF BEST BUDS - Always looking for good partners to help grow the community and the brand. <br /><br /> Hey Ice Cube, be in touch and make Frankie&apos;s dream come true!!!

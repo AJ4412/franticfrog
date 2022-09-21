@@ -63,22 +63,8 @@ const Navbar = () => {
                   src="/png/logo.png"
                   alt="logo"
                 />
-               
-
-                <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
-                  <a href="#roadmap">ROADMAP</a>
-                </li>
-
-                <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
-                  <a href="#gallery">GALLERY</a>
-                </li>
-
-                <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
-                  <a href="#history">HISTORY</a>
-                </li>
-
-                <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
-                  <a href="#creator">STORY</a>
+               <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
+                  <a href="#history">MEET FRANTIC FROG</a>
                 </li>
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
@@ -86,10 +72,20 @@ const Navbar = () => {
                 </li>
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
-                  <a href="#contact">CONTACT</a>
+                  <a href="#gallery">GALLERY</a>
                 </li>
 
-                
+                <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
+                  <a href="#merch">MERCH</a>
+                </li>
+
+                <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
+                  <a href="#roadmap">ROADMAP</a>
+                </li>    
+
+                <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
+                  <a href="#contact">CONTACT</a>
+                </li>
 
                 {/* <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
                   <a href="https://polygonscan.com/address/0xbb45c37a3e97433b0483300c8ed2749b9a08c6a2">CONTRACT</a>
@@ -156,16 +152,28 @@ const Navbar = () => {
             <div className="nav-bg-light h-screen d-flex justify-content-center align-items-center">
               <div className="d-flex flex-column text-center ">
                 <ul className="p-0">
-                  <li className=" transition-0_3sEase overflow-hidden  montserrat-font-family">
+                <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
                     <span
                       className="py-2 py-sm-4 d-inline-block cursor-pointer"
                       onClick={() => setShowOverlay(false)}
                     >
                       <a
-                        href="#roadmap"
+                        href="#history"
+                        className="nav-link fs-2 text-white text-decoration-none"
+                      >MEET FRANTIC FROG
+                      </a>
+                    </span>
+                  </li>
+                  <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
+                    <span
+                      className="py-2 py-sm-4 d-inline-block cursor-pointer"
+                      onClick={() => setShowOverlay(false)}
+                    >
+                      <a
+                        href="#team"
                         className="nav-link fs-2 text-white text-decoration-none"
                       >
-                        ROADMAP
+                        TEAM
                       </a>
                     </span>
                   </li>
@@ -188,19 +196,6 @@ const Navbar = () => {
                       onClick={() => setShowOverlay(false)}
                     >
                       <a
-                        href="#history"
-                        className="nav-link fs-2 text-white text-decoration-none"
-                      >
-                        HISTORY
-                      </a>
-                    </span>
-                  </li>
-                  <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
-                    <span
-                      className="py-2 py-sm-4 d-inline-block cursor-pointer"
-                      onClick={() => setShowOverlay(false)}
-                    >
-                      <a
                         href="#merch"
                         className="nav-link fs-2 text-white text-decoration-none"
                       >
@@ -208,16 +203,16 @@ const Navbar = () => {
                       </a>
                     </span>
                   </li>
-                  <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
+                  <li className=" transition-0_3sEase overflow-hidden  montserrat-font-family">
                     <span
                       className="py-2 py-sm-4 d-inline-block cursor-pointer"
                       onClick={() => setShowOverlay(false)}
                     >
                       <a
-                        href="#team"
+                        href="#roadmap"
                         className="nav-link fs-2 text-white text-decoration-none"
                       >
-                        TEAM
+                        ROADMAP
                       </a>
                     </span>
                   </li>
@@ -288,11 +283,11 @@ const Navbar = () => {
 
                   <Link
                     href={{
-                      pathname: "https://opensea.io/collection/nervous-gorilla-face-team-ngft",
+                      pathname: "https://opensea.io/collection/frantic-frog",
                     }}
                     target="_blank"
                   >
-                    <a href="https://opensea.io/collection/nervous-gorilla-face-team-ngft">
+                    <a href="https://opensea.io/collection/frantic-frog">
                       <span className="mx-2">
                         <ShipIcon />
                       </span>
@@ -353,11 +348,11 @@ const Navbar = () => {
 
                   <Link
                     href={{
-                      pathname: "https://opensea.io/collection/nervous-gorilla-face-team-ngft",
+                      pathname: "https://opensea.io/collection/frantic-frog",
                     }}
                     target="_blank"
                   >
-                    <a href="https://opensea.io/collection/nervous-gorilla-face-team-ngft">
+                    <a href="https://opensea.io/collection/frantic-frog">
                       <span className="mx-sm-2 mx-1 ">
                         <ShipIcon />
                       </span>

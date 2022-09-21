@@ -12,27 +12,15 @@ const Contact = () => {
           <p
             className="text-center small-text justify max-width-975 opacity-07 montserrat-font-family"
           >
-            For technical support, please reach out to our official{" "}
+            To contact us, please reach out to our official{" "}
             <a
               className=" text-white"
-              href=" https://instagram.com/aleksandar94art?utm_medium=copy_link "
+              href="https://twitter.com/frankie_frantic"
               target="_blank"
             >
               @FCUBEHelp
             </a>{" "} account on Twitter, <br />or send an email to frankie@franticfrog.xyz<br /><br />
-            
-            <b>TROUBLESHOOTING</b><br />
-            1. Please disconnect all of your wallets from the website, make sure all of them are disconnected.<br /><br />
-
-            2. Click the padlock to the left of the URL inside chrome, then click cookies. Select all of the domains <br /> related to coolcats, for example franticfrog2, franticfrognft and www.franticfrog.xyz. <br />Then click remove.<br /><br />
-
-            3. Select the correct wallet in metamask, but don’t connect yet.<br /><br />
-
-            4. CTRL + F5 (Hold Shift + Click Reload on Mac) the website, to make sure you have the <br />latest version of the site (it may take a little longer to reload)<br /><br />
-
-            5. Click connect, hopefully you should see the Lily pad at the top right of the website<br /><br />
-
-            6. Once you’ve done this, we can check out the console to see if you are <br /> having any errors and how we can troubleshoot them.<br />
+      
           </p>
         </div>
       </div>

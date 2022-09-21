@@ -271,13 +271,14 @@ const Hero = () => {
             <div className="row">
 
               <div className="col-12 ">
-                <p className="sale-heading montserrat-font-family text-center mb-1">
+                {/* <p className="sale-heading montserrat-font-family text-center mb-1">
                   PUBLIC SALE
-                </p>
+                </p> */}
+                <a href="https://opensea.io/collection/frantic-frog">
+                    
                 <p className="montserrat-font-family sale-text mb-0 text-center">
-                  September 14, 9PM EST
-                </p>
-                <Timer date="25" sale="PUBLIC SALE" />
+                CLICK OPENSEA TO PURCHASE</p></a>
+                {/* <Timer date="25" sale="PUBLIC SALE" /> */}
               </div>
             </div>
           </div>
