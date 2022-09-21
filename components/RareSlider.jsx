@@ -64,8 +64,8 @@ const RareSlider = () => {
     ],
   };
   return (
-    <div  id="gallery">
-      <section className="overflow-hidden">
+    <div id="gallery">
+      <section className="overflow-hidden rare-container">
         <div className="container mb-5 position-relative pe-0">
           <div className="d-flex flex-column justify-content-center align-items-center">
             <h1 className="text-center  main-heading kanit-font-family max-width-335 pb-4">
@@ -73,7 +73,7 @@ const RareSlider = () => {
             </h1>
           </div>
           <div className="row ">
-            <div className="col ">
+            <div className="col">
               <img
                 className="w-100 rare-img1"
                 src="/png/sliderfirstimg.png"
@@ -111,7 +111,7 @@ const RareSlider = () => {
             className="rare-slider position-relative "
           >
             <div
-              className="rare-img px-sm-3 ps-2"
+              className="rare-img px-sm-4 ps-4"
               data-aos="fade-left"
               data-aos-duration="2000"
             >
@@ -122,7 +122,7 @@ const RareSlider = () => {
               />
             </div>
             <div
-              className="rare-img px-sm-3 ps-2"
+              className="rare-img px-sm-4 ps-4"
               data-aos="fade-left"
               data-aos-duration="2000"
             >
@@ -133,7 +133,7 @@ const RareSlider = () => {
               />
             </div>
             <div
-              className="rare-img px-sm-3 ps-2"
+              className="rare-img px-sm-4 ps-4"
               data-aos="fade-left"
               data-aos-duration="2000"
             >
@@ -143,98 +143,98 @@ const RareSlider = () => {
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 ps-2">
+            <div className="rare-img px-sm-4 ps-4">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider4.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 ps-2">
+            <div className="rare-img px-sm-4 ps-4">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider5.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 ps-2">
+            <div className="rare-img px-sm-4 ps-4">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider6.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 ps-2">
+            <div className="rare-img px-sm-4 ps-4">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider7.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 ps-2">
+            <div className="rare-img px-sm-4 ps-4">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider8.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 ps-2">
+            <div className="rare-img px-sm-4 ps-4">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider9.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 ps-2">
+            <div className="rare-img px-sm-4 ps-4">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider10.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 px-2">
+            <div className="rare-img px-sm-4 px-2">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider11.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 px-2">
+            <div className="rare-img px-sm-4 px-2">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider12.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 px-2">
+            <div className="rare-img px-sm-4 px-2">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider13.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 px-2">
+            <div className="rare-img px-sm-4 px-2">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider14.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 px-2">
+            <div className="rare-img px-sm-4 px-2">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider15.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 px-2">
+            <div className="rare-img px-sm-4 px-2">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider16.png"
                 alt="Rare1"
               />
             </div>
-            <div className="rare-img px-sm-3 px-2">
+            <div className="rare-img px-sm-4 px-2">
               <img
                 className="w-100 h-100 object-fit-contain"
                 src="/png/slider17.png"

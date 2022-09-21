@@ -109,6 +109,7 @@ html {
 }
 
 @keyframes bounce {
+
   0%,
   100% {
     transform: translateY(0);
@@ -211,9 +212,11 @@ a {
 .navbar-wrapper .nav-list-items a:hover::after {
   width: 100%;
 }
+
 .navbar-wrapper {
   transition: 0.3s ease;
 }
+
 /* HAMBURGER ICON STYLE  */
 @media (max-width: 991.98px) {
   /* NAVBAR OVERLAY TOGGLE */
@@ -711,6 +714,7 @@ a {
   .loading-img {
     width: 25vw;
   }
+
   .rare-img1 {
     top: 105px;
   }
@@ -794,6 +798,7 @@ a {
     bottom: 4px;
   }
 }
+
 @media (max-width: 400px) {
   .rare-img1 {
     top: 58px;
@@ -832,4 +837,8 @@ a {
   .rare-img2 {
     bottom: 23px;
   }
+}
+
+.rare-img {
+  background-color: black !important;
 }
