@@ -122,9 +122,9 @@ const Navbar = () => {
                   }}
                   target="_blank"
                 >
-                  <a href="https://twitter.com/frankie_frantic">
+                  <a href="https://facebook.com/frankie_frantic">
                     <span className="mx-2">
-                      <FacebookOutlined className="text-white fs-1" />
+                      <FacebookOutlined className="text-white" style={{fontSize: "36px"}} />
                     </span>
                   </a>
                 </Link>
@@ -342,6 +342,18 @@ const Navbar = () => {
                     <a href="https://www.instagram.com/frankiefranticfrog/">
                       <span className="mx-sm-2 mx-1">
                         <InstagramIcon />
+                      </span>
+                    </a>
+                  </Link>
+                  <Link
+                    href={{
+                      pathname: "https://www.facebook.com/frankiefranticfrog/",
+                    }}
+                    target="_blank"
+                  >
+                    <a href="https://twitter.com/frankie_frantic">
+                      <span className="mx-2">
+                        <FacebookOutlined className="text-white" style={{fontSize: "36px"}}/>
                       </span>
                     </a>
                   </Link>
