@@ -100,7 +100,7 @@ const Hero = () => {
     const web3 = new Web3(speedy_nodes);
     const contract = new web3.eth.Contract(contract_abi, contract_address);
     //await Web3.givenProvider.enable()
-    set_price(0.005);
+    set_price(160);
     // contract.methods.Presale_status().call((err,result) => {
     //     console.log("error: "+err);
     //  //   if(result===true){

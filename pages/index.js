@@ -48,8 +48,6 @@ export default function Main() {
             <Home />
           ) : (
             <div className="d-flex justify-content-center align-items-center loading flex-column">
-              <img className="loading-img" src="/png/loading.gif" alt="logo" />
-
               <img className="loading-img" src="/png/loading.png" alt="logo" />
             </div>
           )

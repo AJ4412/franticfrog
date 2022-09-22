@@ -197,17 +197,32 @@ const RoadMap = () => {
             </div>
           </div>
         </div>
+        <div className="col-md-6 mt-4 mt-md-0">
+          <div className="d-flex">
+            <div>
+              <div className="mb-0 road-map_cirlce">
+                <img src="/lily.png" alt="Logo" />
+              </div>
+            </div>
+
+            <div className="ms-4">
+              <h2 className="small-heading montserrat-font-family">
+              BEST BUDS AND PARTNERS
+              </h2>
+              <p className="small-text montserrat-font-family opacity-07">
+              FCUBE KNOWS THE IMPORTANCE OF BEST BUDS - Always looking for good partners to help grow the community and the brand. <br /><br /> Hey Ice Cube, be in touch and make Frankie&apos;s dream come true!!!
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="row  py-md-3">
         <div className="col-md-12 my-4 mt-md-0">
           <div className="text-center">
             <div className="ms-4">
               <h2 className="main-heading kanit-font-family pb-3 mt-5">
-                BEST BUDS AND PARTNERS
+                JOIN THE JOURNEY
               </h2>
-              <p className="small-text montserrat-font-family opacity-07">
-                FCUBE KNOWS THE IMPORTANCE OF BEST BUDS - Always looking for good partners to help grow the community and the brand. <br /><br /> Hey Ice Cube, be in touch and make Frankie&apos;s dream come true!!!
-              </p>
             </div>
           </div>
         </div>
