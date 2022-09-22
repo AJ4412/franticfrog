@@ -347,11 +347,11 @@ const Navbar = () => {
                   </Link>
                   <Link
                     href={{
-                      pathname: "https://www.facebook.com/frankiefranticfrog/",
+                      pathname: "https://www.facebook.com/profile.php?id=100085740350757",
                     }}
                     target="_blank"
                   >
-                    <a href="https://twitter.com/frankie_frantic">
+                    <a href="https://www.facebook.com/profile.php?id=100085740350757">
                       <span className="mx-2">
                         <FacebookOutlined className="text-white" style={{fontSize: "36px"}}/>
                       </span>
