@@ -2,7 +2,7 @@ import React from "react";
 
 const NervousGorilla = () => {
   return (
-    <div className="py-5" data-aos="fade-up" data-aos-duration="2000">
+    <div className="py-5">
       <div className="container">
         <h1 className="text-center pb-4 main-heading kanit-font-family ">
           FRANTIC FROG

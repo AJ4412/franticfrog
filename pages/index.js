@@ -54,7 +54,7 @@ export default function Main() {
         }
         {showButton ? (
           <div
-            className="topscroll d-flex justify-content-center align-items-center cursor-pointer"
+            className="topscroll text-white d-flex justify-content-center align-items-center cursor-pointer"
             onClick={() => scrollTop()}
           >
             <UpArrowIcon />

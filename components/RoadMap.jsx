@@ -4,7 +4,7 @@ const RoadMap = () => {
   return (
     <div className="container position-relative" id="roadmap">
       <img src="/rainbow.png" alt="Logo" className="rainbow" />
-      <h1 className="main-heading kanit-font-family text-center mb-0 pt-lg-3 pt-4 mt-sm-3 pb-sm-5 ">
+      <h1 style={{ color: "red" }} className="main-heading kanit-font-family text-center mb-0 pt-lg-3 pt-4 mt-sm-3 pb-sm-5 ">
         ROADMAP
       </h1>
       <div className="row py-md-3">
@@ -216,7 +216,7 @@ const RoadMap = () => {
           </div>
         </div>
       </div>
-      <div className="row  py-md-3">
+      {/* <div className="row  py-md-3">
         <div className="col-md-12 my-4 mt-md-0">
           <div className="text-center">
             <div className="ms-4">
@@ -226,7 +226,7 @@ const RoadMap = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* 
       <p className="small-heading montserrat-font-family text-center pb-sm-5 pb-2">
         ROADMAP 2.0 will appear immediately after the first one is completed.

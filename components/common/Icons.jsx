@@ -183,7 +183,7 @@ export const UpArrowIcon = () => {
       preserveAspectRatio="xMidYMid meet"
       viewBox="0 0 20 20"
     >
-      <path d="M15 14l-5-5l-5 5l-2-1l7-7l7 7z" fill="#01001d" />
+      <path d="M15 14l-5-5l-5 5l-2-1l7-7l7 7z" fill="#FFFFFF" />
     </svg>
   );
 };

@@ -21,6 +21,8 @@ a {
 
 .montserrat-font-family {
   font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  text-justify: inter-word;
 }
 
 
@@ -30,7 +32,7 @@ a {
 
 body,
 html {
-  background-color: var(--black) !important;
+  background-color: var(--turqoise) !important;
   overflow-x: hidden;
 }
 
@@ -42,10 +44,11 @@ html {
   --font-md: 20px;
   --font-sm: 18px;
   /* COLORS */
-  --white: #ffffff;
   --black: #000000;
+  --white: #FFFFFF;
   --light-black: #36393f;
   --grey: #c4c4c4;
+  --turqoise: #01E8F6;
 }
 
 @media (max-width: 991.98px) {
@@ -95,17 +98,22 @@ html {
   position: fixed;
   right: 40px;
   bottom: 45px;
-  background-color: var(--white);
+  background-color: var(--black);
   height: 50px;
   z-index: 10;
   width: 50px;
   border-radius: 50%;
   animation: bounce 2s infinite;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
+  color: white !important;
+}
+
+.topscroll svg {
+  color: white !important;
 }
 
 .topscroll:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--black);
 }
 
 @keyframes bounce {
@@ -127,13 +135,13 @@ html {
 .main-heading {
   font-weight: 600;
   font-size: var(--font-xl);
-  color: var(--white);
+  color: var(--black);
 }
 
 .small-heading {
   font-weight: 700;
   font-size: var(--font-sm);
-  color: var(--white);
+  color: var(--black);
 }
 
 .opacity-07 {
@@ -143,22 +151,22 @@ html {
 .small-text {
   font-weight: 400;
   font-size: var(--font-sm);
-  color: var(--white);
+  color: var(--black);
 }
 
 .header-text {
   font-weight: 700;
   font-size: var(--font-md);
-  color: var(--white);
+  color: var(--black);
 }
 
 .mint-button {
-  background-color: var(--white);
+  background-color: var(--black);
   border-radius: 64px;
-  color: var(--black);
+  color: var(--white);
   font-weight: 700;
   font-size: var(--font-md);
-  border: 1px solid var(--white);
+  border: 1px solid var(--black);
   transition: 0.3s;
 }
 
@@ -178,7 +186,7 @@ html {
 }
 
 .transparent {
-  background-color: var(--black);
+  background-color: var(--turqoise);
   position: fixed;
   top: 0px;
   transition: 0.3s;
@@ -188,7 +196,7 @@ html {
 .navbar-wrapper .nav-list-items a {
   font-weight: 700;
   font-size: var(--font-md);
-  color: var(--white) !important;
+  color: var(--black) !important;
   text-decoration: none;
   position: relative;
 }
@@ -204,7 +212,7 @@ a {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: rgb(240, 240, 240);
+  background-color: var(--black);
   -webkit-transition: all 0.3s ease-in-out 0s;
   transition: all 0.3s ease-in-out 0s;
 }
@@ -215,6 +223,7 @@ a {
 
 .navbar-wrapper {
   transition: 0.3s ease;
+  z-index: 1000 !important;
 }
 
 /* HAMBURGER ICON STYLE  */
@@ -327,7 +336,7 @@ a {
   opacity: 0;
   font-weight: 700;
   font-size: var(--font-md);
-  color: var(--white);
+  color: var(--black);
   list-style-type: none;
 }
 
@@ -451,12 +460,12 @@ a {
 }
 
 .sale-text {
-  background-color: var(--white);
+  background-color: var(--black);
   border-radius: 64px;
-  color: var(--black) !important;
+  color: var(--white) !important;
   font-weight: 700;
   font-size: var(--font-md);
-  border: 1px solid var(--white);
+  border: 1px solid var(--black);
   transition: 0.3s;
   padding: 10px 19px;
   text-decoration: none;
@@ -530,7 +539,7 @@ a {
 }
 
 .rare-slider .slick-dots li.slick-active button:before {
-  color: var(--white);
+  color: var(--black);
 }
 
 .next-arrow {
@@ -555,7 +564,7 @@ a {
 .community-text {
   font-size: var(--font-2xxl);
   font-size: 600;
-  color: var(--white);
+  color: var(--black);
 }
 
 .join-btn-img {
@@ -564,7 +573,7 @@ a {
 }
 
 .discord-button {
-  background-color: var(--white);
+  background-color: var(--black);
   border-radius: 64px;
   color: var(--black);
   font-weight: 700;
@@ -575,11 +584,11 @@ a {
 
 .discord-button:hover {
   background-color: var(--black);
-  color: var(--white);
+  color: var(--black);
 }
 
 .discord-button:hover svg path {
-  fill: var(--white);
+  fill: var(--black);
 }
 
 /* ==============================================================ROAD MAP =================================================================== */
@@ -590,40 +599,27 @@ a {
   border-radius: 50%;
 }
 
-.road-map_cirlce {
-  background-color: rgba(100, 100, 100, 0.53);
-  border-radius: 50%;
-  height: 55px;
-  width: 55px;
-  display: flex !important;
-  justify-content: center !important;
-  align-items: center !important;
-  /* vertical-align: middle; */
-}
-
 .road-map_cirlce img {
-  height: 32px;
-  width: 32px;
-  margin-right: 2px;
-  margin-top: 6px;
+  height: 47px;
+  width: 47px;
 }
 
 /* ============================================================== FOOTER SECTION ============================================================= */
 .footer-section {
-  background-color: var(--black);
+  background-color: var(--turqoise);
 }
 
 .border-line {
   height: 1px;
   width: 100%;
-  background-color: var(--white);
+  background-color: var(--black);
 }
 
 /* ======================================================== TEAM ===============================================================  */
 .team-heading {
   font-weight: 600;
   font-size: var(--font-lg);
-  color: var(--white);
+  color: var(--black);
 }
 
 .team-hover {
@@ -640,7 +636,7 @@ a {
 }
 
 .team-slider .slick-dots li.slick-active button:before {
-  color: var(--white);
+  color: var(--black);
 }
 
 .team-slider .small-heading {
@@ -752,7 +748,7 @@ a {
   }
 
   .hero-section {
-    height: 80vh;
+    min-height: 80vh;
   }
 
   .loading-img {
@@ -883,6 +879,11 @@ a {
   }
 }
 
-.rare-img {
-  background-color: black !important;
+.join {
+  text-align: center;
+}
+
+.join h2 {
+  font-size: 54px;
+  color: red;
 }
