@@ -222,7 +222,7 @@ const Hero = () => {
 
           <Stack direction={'row'} justifyContent={'space-between'} sx={{
             fontSize: { xs: '16px', lg: "23px" },
-            color: '#fff',
+            color: '#000000',
             py: '8px',
             alignItems: 'center',
             margin: "4px 32px"
@@ -232,17 +232,17 @@ const Hero = () => {
             </Box>
             <Stack alignItems={'center'} direction={'row'} spacing={3}>
               <IconButton onClick={onMinusClickHandler} sx={{
-                color: '#fff'
+                color: '#000000'
               }}>
-                <RemoveOutlinedIcon color={'#fff'} />
+                <RemoveOutlinedIcon color={'#000000'} />
               </IconButton>
               <Box>
                 {mintNumber}
               </Box>
               <IconButton onClick={onPlusClickHandler} sx={{
-                color: '#fff'
+                color: '#000000'
               }}>
-                <AddOutlinedIcon color={'#fff'} />
+                <AddOutlinedIcon color={'#000000'} />
               </IconButton>
 
             </Stack>

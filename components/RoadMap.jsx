@@ -4,7 +4,7 @@ const RoadMap = () => {
   return (
     <div className="container position-relative" id="roadmap">
       <img src="/rainbow.png" alt="Logo" className="rainbow" />
-      <h1 className="main-heading kanit-font-family text-center mb-0 pt-lg-3 pt-4 mt-sm-3 pb-sm-5 ">
+      <h1 style={{ color: "red" }} className="main-heading kanit-font-family text-center mb-0 pt-lg-3 pt-4 mt-sm-3 pb-sm-5 ">
         ROADMAP
       </h1>
       <div className="row py-md-3">
@@ -197,8 +197,27 @@ const RoadMap = () => {
             </div>
           </div>
         </div>
+        <div className="col-md-6 mt-4 mt-md-0">
+          <div className="d-flex">
+            <div>
+              <div className="mb-0 road-map_cirlce">
+                <img src="/lily.png" alt="Logo" />
+              </div>
+            </div>
+
+            <div className="ms-4">
+              <h2 className="small-heading montserrat-font-family">
+                BEST BUDS AND PARTNERS
+              </h2>
+              <p className="small-text montserrat-font-family opacity-07">
+                FCUBE KNOWS THE IMPORTANCE OF BEST BUDS - Always looking for good partners to help grow the community and the brand. <br /><br /> Hey Ice Cube, be in touch and make Frankie&apos;s dream come true!!!
+              </p>
+              <p>ROADMAP 2.0 will appear immediately after the first one is completed.</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="row  py-md-3">
+      {/* <div className="row  py-md-3">
         <div className="col-md-12 my-4 mt-md-0">
           <div className="text-center">
             <div className="ms-4">
@@ -211,7 +230,7 @@ const RoadMap = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* 
       <p className="small-heading montserrat-font-family text-center pb-sm-5 pb-2">
         ROADMAP 2.0 will appear immediately after the first one is completed.

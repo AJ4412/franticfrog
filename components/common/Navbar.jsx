@@ -11,6 +11,7 @@ import {
   TwitterIcon,
   DiscordIcon,
 } from "../common/Icons";
+import { FacebookOutlined } from "@mui/icons-material";
 const Navbar = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   // const { showOverlay, setShowOverlay } = useScreenFixedProvider();
@@ -47,11 +48,10 @@ const Navbar = () => {
     });
   };
   return (
-    <div style={{height: "80px"}}>
+    <div style={{ height: "80px" }}>
       <section
-        className={`${
-          scrollPosition > 200 || showOverlay ? "transparent" : "black "
-        } d-flex w-100 navbar-wrapper justify-content-center py-sm-2 py-2`}
+        className={`${scrollPosition > 200 || showOverlay ? "transparent" : "black "
+          } d-flex w-100 navbar-wrapper justify-content-center py-sm-2 py-2`}
       >
         <Desktop>
           <div className="container">
@@ -63,7 +63,7 @@ const Navbar = () => {
                   src="/png/logo.png"
                   alt="logo"
                 />
-               <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
+                <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
                   <a href="#history">MEET FRANTIC FROG</a>
                 </li>
 
@@ -81,7 +81,7 @@ const Navbar = () => {
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
                   <a href="#roadmap">ROADMAP</a>
-                </li>    
+                </li>
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
                   <a href="#contact">CONTACT</a>
@@ -124,6 +124,18 @@ const Navbar = () => {
                 >
                   <a href="https://twitter.com/frankie_frantic">
                     <span className="mx-2">
+                      <FacebookOutlined className="text-white fs-1" />
+                    </span>
+                  </a>
+                </Link>
+                <Link
+                  href={{
+                    pathname: "https://twitter.com/frankie_frantic",
+                  }}
+                  target="_blank"
+                >
+                  <a href="https://twitter.com/frankie_frantic">
+                    <span className="mx-2">
                       <TwitterIcon />
                     </span>
                   </a>
@@ -152,7 +164,7 @@ const Navbar = () => {
             <div className="nav-bg-light h-screen d-flex justify-content-center align-items-center">
               <div className="d-flex flex-column text-center ">
                 <ul className="p-0">
-                <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
+                  <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
                     <span
                       className="py-2 py-sm-4 d-inline-block cursor-pointer"
                       onClick={() => setShowOverlay(false)}
@@ -245,7 +257,7 @@ const Navbar = () => {
                 </ul>
                 <div className="link">
                   <Link
-                     href={{
+                    href={{
                       pathname: "https://discord.gg/7Cvn8fWj",
                     }}
                     target="_blank"
@@ -360,9 +372,8 @@ const Navbar = () => {
                   </Link>
                 </div>
                 <div
-                  className={`${
-                    showOverlay ? "animate" : ""
-                  } position-relative navbarwrapper  hamburger-icon d-flex flex-column ms-2 d-lg-none`}
+                  className={`${showOverlay ? "animate" : ""
+                    } position-relative navbarwrapper  hamburger-icon d-flex flex-column ms-2 d-lg-none`}
                   onClick={() => setShowOverlay(!showOverlay)}
                 >
                   <span className="first d-inline-block"></span>

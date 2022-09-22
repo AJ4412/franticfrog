@@ -9,7 +9,7 @@ const Creator = () => {
         </h1>
         <div className="d-flex justify-content-center">
           <p
-            className="text-center small-text opacity-07 max-width-975 montserrat-font-family">
+            className="small-text opacity-07 max-width-975 montserrat-font-family">
             At a Sunday family dinner, our children began discussing a new cool form of art called NFTs.  Diane, who is a conventional visual artist, specifically became interested.
             She thought this would be an invigorating change.  Inspired by the existing NFTs at that time, the idea of frog characters seemed just right, so she created a few frogs using the program paintbrush, one at a time.
             Her children and she liked her creation, so her daughter told her, “Now, just create an NFT collection of 10,000 different frogs.” This seemed like a nonstarter to Diane.  
