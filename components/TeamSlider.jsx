@@ -47,57 +47,35 @@ const TeamSlider = () => {
       <div className=" px-sm-3 px-2">
         <img
           className="d-block mx-auto w-100 "
+          src="/png/team3.png"
+          alt="Rare1"
+        />
+        <h1 className="team-heading kanit-font-family text-center pt-2">
+          EDWIN
+        </h1>
+        <p className="small-text opacity-07  text-center">CHIEF COOK AND BOTTLE WASHER</p>
+      </div>
+      <div className=" px-sm-3 px-2">
+        <img
+          className="d-block mx-auto w-100 "
+          src="/png/team2.png"
+          alt="Rare1"
+        />
+        <h1 className="team-heading kanit-font-family text-center pt-2">
+          FRANKIE
+        </h1>
+        <p className="small-text opacity-07  text-center">SUPER HERO</p>
+      </div>
+      <div className=" px-sm-3 px-2">
+        <img
+          className="d-block mx-auto w-100 "
           src="/png/team1.png"
           alt="Rare1"
         />
         <h1 className="team-heading kanit-font-family text-center pt-2">
-          B.165
+          DIANE
         </h1>
-        <p className="small-text opacity-07  text-center">FOUNDER & DESIGNER</p>
-      </div>
-      <div className=" px-sm-3 px-2">
-        <img
-          className="d-block mx-auto w-100 "
-          src="/png/team2.png"
-          alt="Rare1"
-        />
-        <h1 className="team-heading kanit-font-family text-center pt-2">
-          Angie
-        </h1>
-        <p className="small-text opacity-07  text-center">Co-Founder</p>
-      </div>
-      <div className=" px-sm-3 px-2">
-        <img
-          className="d-block mx-auto w-100 "
-          src="/png/team3.png"
-          alt="Rare1"
-        />
-        <h1 className="team-heading kanit-font-family text-center pt-2">
-          Johnny Bravo
-        </h1>
-        <p className="small-text opacity-07  text-center"> Celebrity Scout</p>
-      </div>
-      <div className=" px-sm-3 px-2">
-        <img
-          className="d-block mx-auto w-100 "
-          src="/png/team2.png"
-          alt="Rare1"
-        />
-        <h1 className="team-heading kanit-font-family text-center pt-2">
-          Angie
-        </h1>
-        <p className="small-text opacity-07  text-center">Co-Founder</p>
-      </div>
-      <div className=" px-sm-3 px-2">
-        <img
-          className="d-block mx-auto w-100 "
-          src="/png/team3.png"
-          alt="Rare1"
-        />
-        <h1 className="team-heading kanit-font-family text-center pt-2">
-          Johnny Bravo
-        </h1>
-        <p className="small-text opacity-07  text-center"> Celebrity Scout</p>
+        <p className="small-text opacity-07  text-center">CREATIVE DIRECTOR</p>
       </div>
     </Slider>
   );
