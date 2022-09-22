@@ -14,10 +14,10 @@ const Footer = () => {
     });
   };
   return (
-    <div className="footer-section pt-5">
+    <div className="footer-section">
       <img
         onClick={() => scrollTop()}
-        className="d-block mx-auto pt-5 mt-4 header-hover cursor-pointer"
+        className="d-block mx-auto pt-4 mt-0 header-hover cursor-pointer"
         src="/png/logo.png"
         alt="logo"
       />

@@ -4,17 +4,17 @@ import React from "react";
 const Merch = () => {
   return (
     <div className="container" id="merch">
-      <div className="row">
+      <div>
         <div
-          className="col-sm-7 my-auto"
+          className="my-auto text-center"
           data-aos="fade-right"
           data-aos-duration="2000"
         >
-          <h1 className="main-heading text-center text-sm-start kanit-font-family mb-sm-0 mb-3">
+          <h1 className="main-heading text-center kanit-font-family mb-sm-0 mb-3">
             MERCH
           </h1>
-          <p className="small-text montserrat-font-family opacity-07 pe-sm-5">
-          Here is the soft opening of our merchandise store.  If you would like to make a purchase please email us at frankie@franticfrog.xyz{" "}
+          <p className="small-text mt-2 montserrat-font-family opacity-07 pe-sm-5">
+            Here is the soft opening of our merchandise store.  If you would like to make a purchase please email us at frankie@franticfrog.xyz{" "}
             {/* <a
               className=" text-white"
               href=" https://instagram.com/aleksandar94art?utm_medium=copy_link "
@@ -25,7 +25,7 @@ const Merch = () => {
           </p>
         </div>
         <div
-          className="col-sm-5  "
+          className="mt-4"
           data-aos="flip-left"
           data-aos-duration="2000"
         >

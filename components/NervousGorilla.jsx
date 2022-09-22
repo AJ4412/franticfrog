@@ -9,7 +9,7 @@ const NervousGorilla = () => {
         </h1>
         <div className="d-flex justify-content-center">
           <p
-            className="text-center small-text opacity-07 max-width-975 montserrat-font-family">
+            className="small-text opacity-07 max-width-975 montserrat-font-family">
             Frantic Frog is a collection of 10,000 unique NFTs featuring Frankie, The Frantic Frog amiably known in the community as F Cube.
             Glide and slippity slide into the NFT tide.  <br /> <br />Come along for the ride and join the F Cube frantic side. <br /> <br /> Frantic Frogs
             are NFTs-digital collectibles stored as ERC-721 tokens on the
@@ -19,12 +19,12 @@ const NervousGorilla = () => {
         </div>
 
         <h1 id="history" className="text-center pb-4 main-heading kanit-font-family ">
-        <br />FRANTIC FROG&apos;S STORY
+          <br />FRANTIC FROG&apos;S STORY
         </h1>
         <div className="d-flex justify-content-center">
           <p
-            className="text-center small-text opacity-07 max-width-975 montserrat-font-family"
-            
+            className="small-text opacity-07 max-width-975 montserrat-font-family"
+
           >
             Frankie was born Francis, one of 600 tadpoles, in a radioactive puddle in Staten Island.  As a youngster, he began to have aspirations of becoming more than he was when he realized that he could be both a tadpole and a pollywog.  Frankie’s parents were June, a bookkeeper at her family’s fly-loffel eatery, and Wood, a flylanderer who hopped from one Lily pad to another.  Both parents were born and raised in the New York Harbor.  Frankie’s grandparents were immigrants from Yearn Gully.  They spoke knee-deep, croak, and ribbit.  As a result of growing up in a multilingual family, Frankie had a gift for gab, and as he metamorphosized into a young toad, he affectionately became known as “Bullfrog” in the neighborhood.
             <br /><br />When Frankie left the neighborhood, he got a job as a frog in your throat, which he did not relish, since he preferred fruit flies.  Since he found this work in bad taste, he began to crack croaks.  His philosophy was not, “Time flies when you’re having fun”, but it  was, “Time’s fun when you’re having flies.  Frankie could not take the job seriously, since he always had earnest aspirations of being more than he was.  One day while he was working on making someone horse in the throat, which was no small task since he was a frog, Master Leap-Frog, a Superhero Frog, descended making Frankie 10,000 unique Frogs, thus bestowing Superhero qualities to Frankie.  Needing to keep track of all of these unique Frogs, made Frankie very frantic, so he took on the name of Frankie Frantic Frog, otherwise known in Superhero lore as FCUBE.
@@ -36,7 +36,7 @@ const NervousGorilla = () => {
       </div>
     </div>
 
-    
+
   );
 };
 

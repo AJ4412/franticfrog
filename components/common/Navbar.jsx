@@ -47,7 +47,7 @@ const Navbar = () => {
     });
   };
   return (
-    <div style={{height: "240px"}}>
+    <div style={{height: "80px"}}>
       <section
         className={`${
           scrollPosition > 200 || showOverlay ? "transparent" : "black "

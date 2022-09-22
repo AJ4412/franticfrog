@@ -268,19 +268,13 @@ const Hero = () => {
         </div>
         <div className="sale-section px-sm-5 py-2 ">
           <div className="container">
-            <div className="row">
-
-              <div className="col-12 ">
-                {/* <p className="sale-heading montserrat-font-family text-center mb-1">
+            {/* <p className="sale-heading montserrat-font-family text-center mb-1">
                   PUBLIC SALE
                 </p> */}
-                <a href="https://opensea.io/collection/frantic-frog">
-                    
-                <p className="montserrat-font-family sale-text mb-0 text-center">
-                CLICK OPENSEA TO PURCHASE</p></a>
-                {/* <Timer date="25" sale="PUBLIC SALE" /> */}
-              </div>
-            </div>
+            <a href="https://opensea.io/collection/frantic-frog" className="montserrat-font-family sale-text mb-0 text-center">
+              CLICK OPENSEA TO PURCHASE
+            </a>
+            {/* <Timer date="25" sale="PUBLIC SALE" /> */}
           </div>
         </div>
       </div>
