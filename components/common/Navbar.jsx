@@ -176,19 +176,7 @@ const Navbar = () => {
                       </a>
                     </span>
                   </li>
-                  <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
-                    <span
-                      className="py-2 py-sm-4 d-inline-block cursor-pointer"
-                      onClick={() => setShowOverlay(false)}
-                    >
-                      <a
-                        href="#team"
-                        className="nav-link fs-2 text-white text-decoration-none"
-                      >
-                        TEAM
-                      </a>
-                    </span>
-                  </li>
+                  
                   <li className=" transition-0_3sEase overflow-hidden  montserrat-font-family">
                     <span
                       className="py-2 py-sm-4 d-inline-block cursor-pointer"
@@ -225,6 +213,19 @@ const Navbar = () => {
                         className="nav-link fs-2 text-white text-decoration-none"
                       >
                         ROADMAP
+                      </a>
+                    </span>
+                  </li>
+                  <li className="nav-item btn-img mt-3 mt-lg-1  transition-0_3sEase overflow-hidden  montserrat-font-family">
+                    <span
+                      className="py-2 py-sm-4 d-inline-block cursor-pointer"
+                      onClick={() => setShowOverlay(false)}
+                    >
+                      <a
+                        href="#team"
+                        className="nav-link fs-2 text-white text-decoration-none"
+                      >
+                        TEAM
                       </a>
                     </span>
                   </li>

@@ -13,7 +13,15 @@ const Merch = () => {
           <h1 className="main-heading text-center kanit-font-family mb-sm-0 mb-3">
             MERCH
           </h1>
-          <p className="small-text mt-2 montserrat-font-family opacity-07 pe-sm-5">
+        </div>
+        <div
+          className="mt-4"
+          data-aos="flip-left"
+          data-aos-duration="2000"
+        >
+          <img className="w-100" src="/png/merch.png" alt="MerchImg" />
+        </div>
+        <p className="small-text mt-2 montserrat-font-family opacity-07 pe-sm-5">
             Here is the soft opening of our merchandise store.  If you would like to make a purchase, please email us at frankie@franticfrog.xyz{" "}
             {/* <a
               className=" text-white"
@@ -23,14 +31,6 @@ const Merch = () => {
               @aleksandar94art
             </a> */}
           </p>
-        </div>
-        <div
-          className="mt-4"
-          data-aos="flip-left"
-          data-aos-duration="2000"
-        >
-          <img className="w-100" src="/png/merch.png" alt="MerchImg" />
-        </div>
       </div>
     </div>
   );
