@@ -122,7 +122,7 @@ const Navbar = () => {
                   }}
                   target="_blank"
                 >
-                  <a href="https://facebook.com/frankie_frantic">
+                  <a href="https://www.facebook.com/profile.php?id=100085740350757">
                     <span className="mx-2">
                       <FacebookOutlined className="text-white" style={{fontSize: "36px"}} />
                     </span>
