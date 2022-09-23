@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
 
   function contractadd(){
-    location.replace("https://etherscan.io/address/0x34b298f03120ca3ecff04e5bfebccf3550baca56")
+    location.replace("https://polygonscan.com/address/0xbb45c37a3e97433b0483300c8ed2749b9a08c6a2")
   }
 
   const scrollTop = () => {
