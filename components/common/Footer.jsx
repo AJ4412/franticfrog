@@ -26,7 +26,7 @@ const Footer = () => {
       <p onClick={contractadd} className="mb-0 py-4 text-center small-text opacity-07 montserrat-font-family">0xbB45C37a3E97433b0483300c8Ed2749b9A08c6A2</p>
       <p className="mb-0 py-4 text-center small-text opacity-07 montserrat-font-family">
 
-        FRANTIC FROGS TEAM
+        FRANTIC FROG&apos;S TEAM
       </p>
     </div>
   );

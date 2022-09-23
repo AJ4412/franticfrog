@@ -14,7 +14,7 @@ const Merch = () => {
             MERCH
           </h1>
           <p className="small-text mt-2 montserrat-font-family opacity-07 pe-sm-5">
-            Here is the soft opening of our merchandise store.  If you would like to make a purchase please email us at frankie@franticfrog.xyz{" "}
+            Here is the soft opening of our merchandise store.  If you would like to make a purchase, please email us at frankie@franticfrog.xyz{" "}
             {/* <a
               className=" text-white"
               href=" https://instagram.com/aleksandar94art?utm_medium=copy_link "

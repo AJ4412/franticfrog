@@ -4,7 +4,7 @@ const RoadMap = () => {
   return (
     <div className="container position-relative" id="roadmap">
       <img src="/rainbow.png" alt="Logo" className="rainbow" />
-      <h1 style={{ color: "red" }} className="main-heading kanit-font-family text-center mb-0 pt-lg-3 pt-4 mt-sm-3 pb-sm-5 ">
+      <h1 style={{ color: "red"}} className="main-heading kanit-font-family text-center mb-0 pt-lg-3 pt-4 mt-sm-3 pb-sm-5 ">
         ROADMAP
       </h1>
       <div className="row py-md-3">
@@ -33,10 +33,10 @@ const RoadMap = () => {
             </div>
 
             <div className="ms-4">
-              <h2 className="small-heading montserrat-font-family">SEPTEMBER</h2>
+              <h2 className="small-heading montserrat-font-family">LAUNCHED</h2>
               <p className="small-text montserrat-font-family opacity-07">
                 FRANTIC FROG ON OPENSEA AND FIRST NFTS PURCHASED SEPTEMBER 2022.
-                FRANTIC FROG WEBSITE AND dAPP ON INTERNET OCTOBER 2022.
+                FRANTIC FROG WEBSITE AND dAPP ON INTERNET SEPTEMBER 2022.
               </p>
             </div>
           </div>
@@ -54,10 +54,10 @@ const RoadMap = () => {
 
             <div className="ms-4">
               <h2 className="small-heading montserrat-font-family">
-                SEPTEMBER
+                SOCIAL MEDIA
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                FRANTIC FROG ON FACEBOOK, INSTAGRAM, TWITTER AND ON THE FCUBE DISCORD - EXPECTED NOVEMBER 2022.  Join the Frantic Frog community and be a part of a global network of like-minded people from all walks of life.
+                FRANTIC FROG ON FACEBOOK, INSTAGRAM, TWITTER AND ON THE FCUBE DISCORD - SEPTEMBER 2022.  Join the Frantic Frog community and be a part of a global network of like-minded people from all walks of life.
               </p>
             </div>
           </div>
@@ -154,7 +154,7 @@ const RoadMap = () => {
                 SUPERHERO POWERS
               </h2>
               <p className="small-text montserrat-font-family opacity-07">
-                FCUBE LIKES TO SHARE HIS SUPER HERO POWERS - The future will hold an animated superhero movie where FCube will disclose some of his more spectacular feats.
+                FCUBE LIKES TO SHARE HIS SUPER HERO POWERS - The future will hold an animated superhero movie where FCUBE will disclose some of his more spectacular feats.
               </p>
             </div>
           </div>
