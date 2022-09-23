@@ -68,10 +68,6 @@ const Navbar = () => {
                 </li>
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
-                  <a href="#team">TEAM</a>
-                </li>
-
-                <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
                   <a href="#gallery">GALLERY</a>
                 </li>
 
@@ -81,6 +77,10 @@ const Navbar = () => {
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
                   <a href="#roadmap">ROADMAP</a>
+                </li>
+
+                <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
+                  <a href="#team">TEAM</a>
                 </li>
 
                 <li className="mx-2 nav-list-items p-2 d-inline-block cursor-pointer  montserrat-font-family">
