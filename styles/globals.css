@@ -650,6 +650,10 @@ a {
   isolation: isolate;
 }
 
+#roadmap p {
+  text-align: left;
+}
+
 .rainbow {
   position: absolute;
   width: 100%;
