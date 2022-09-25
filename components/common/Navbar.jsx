@@ -124,7 +124,7 @@ const Navbar = () => {
                 >
                   <a href="https://www.facebook.com/groups/446146080823555/about">
                     <span className="mx-2">
-                      <FacebookOutlined className="text-white" style={{fontSize: "36px"}} />
+                      <FacebookOutlined style={{ fontSize: "36px", color: "black" }} />
                     </span>
                   </a>
                 </Link>
@@ -176,7 +176,7 @@ const Navbar = () => {
                       </a>
                     </span>
                   </li>
-                  
+
                   <li className=" transition-0_3sEase overflow-hidden  montserrat-font-family">
                     <span
                       className="py-2 py-sm-4 d-inline-block cursor-pointer"
@@ -354,7 +354,7 @@ const Navbar = () => {
                   >
                     <a href="https://www.facebook.com/groups/446146080823555/about">
                       <span className="mx-2">
-                        <FacebookOutlined className="text-white" style={{fontSize: "36px"}}/>
+                        <FacebookOutlined style={{ fontSize: "36px", color: "black" }} />
                       </span>
                     </a>
                   </Link>
