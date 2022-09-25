@@ -645,7 +645,7 @@ a {
 
 #roadmap {
   margin-top: 400px;
-  z-index: 1000;
+  isolation: isolate;
 }
 
 .rainbow {

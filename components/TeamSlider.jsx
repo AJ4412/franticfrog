@@ -47,7 +47,7 @@ const TeamSlider = () => {
       <div className=" px-sm-3 px-2">
         <img
           className="d-block mx-auto w-100 "
-          src="/png/team3.png"
+          src="/png/team2.png"
           alt="Rare1"
         />
         <h1 className="team-heading kanit-font-family text-center pt-2">
@@ -58,7 +58,7 @@ const TeamSlider = () => {
       <div className=" px-sm-3 px-2">
         <img
           className="d-block mx-auto w-100 "
-          src="/png/team2.png"
+          src="/png/team3.png"
           alt="Rare1"
         />
         <h1 className="team-heading kanit-font-family text-center pt-2">

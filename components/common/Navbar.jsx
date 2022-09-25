@@ -122,7 +122,7 @@ const Navbar = () => {
                   }}
                   target="_blank"
                 >
-                  <a href="https://www.facebook.com/profile.php?id=100085740350757">
+                  <a href="https://www.facebook.com/groups/446146080823555/about">
                     <span className="mx-2">
                       <FacebookOutlined className="text-white" style={{fontSize: "36px"}} />
                     </span>
@@ -348,11 +348,11 @@ const Navbar = () => {
                   </Link>
                   <Link
                     href={{
-                      pathname: "https://www.facebook.com/profile.php?id=100085740350757",
+                      pathname: "https://www.facebook.com/groups/446146080823555/about",
                     }}
                     target="_blank"
                   >
-                    <a href="https://www.facebook.com/profile.php?id=100085740350757">
+                    <a href="https://www.facebook.com/groups/446146080823555/about">
                       <span className="mx-2">
                         <FacebookOutlined className="text-white" style={{fontSize: "36px"}}/>
                       </span>
