@@ -94,11 +94,11 @@ const Navbar = () => {
               <div>
                 <Link
                   href={{
-                    pathname: "https://discord.gg/7Cvn8fWj",
+                    pathname: "https://discord.gg/DTaXpmm2",
                   }}
                   target="_blank"
                 >
-                  <a href="https://discord.gg/7Cvn8fWj">
+                  <a href="https://discord.gg/DTaXpmm2">
                     <span className="mx-2">
                       <DiscordIcon />
                     </span>
@@ -118,11 +118,11 @@ const Navbar = () => {
                 </Link>
                 <Link
                   href={{
-                    pathname: "https://twitter.com/frankie_frantic",
+                    pathname: "https://www.facebook.com/profile.php?id=100086427944468",
                   }}
                   target="_blank"
                 >
-                  <a href="https://www.facebook.com/groups/446146080823555/about">
+                  <a href="https://www.facebook.com/profile.php?id=100086427944468">
                     <span className="mx-2">
                       <FacebookOutlined style={{ fontSize: "36px", color: "black" }} />
                     </span>
@@ -153,6 +153,32 @@ const Navbar = () => {
                     </span>
                   </a>
                 </Link>
+                
+                <Link
+                    href={{
+                      pathname: "https://www.tiktok.com/@frankie_frantic?lang=en",
+                    }}
+                    target="_blank"
+                  >
+                    <a href="https://www.tiktok.com/@frankie_frantic?lang=en">
+                      <span className="mx-2">
+                         <img src="tiktok.png" width="35px" height="35px" />
+                      </span>
+                    </a>
+                  </Link>
+                  
+                  <Link
+                    href={{
+                      pathname: "https://www.pinterest.co.uk/FrankieFranticFrog/",
+                    }}
+                    target="_blank"
+                  >
+                    <a href="https://www.pinterest.co.uk/FrankieFranticFrog/">
+                      <span className="mx-2">
+                         <img src="pinterest.png" width="35px" height="35px" />
+                      </span>
+                    </a>
+                  </Link>  
               </div>
             </div>
           </div>
@@ -259,11 +285,11 @@ const Navbar = () => {
                 <div className="link">
                   <Link
                     href={{
-                      pathname: "https://discord.gg/7Cvn8fWj",
+                      pathname: "https://discord.gg/DTaXpmm2",
                     }}
                     target="_blank"
                   >
-                    <a href="https://discord.gg/7Cvn8fWj">
+                    <a href="https://discord.gg/DTaXpmm2">
                       <span className="mx-2">
                         <DiscordIcon />
                       </span>
@@ -306,6 +332,32 @@ const Navbar = () => {
                       </span>
                     </a>
                   </Link>
+                  
+                  <Link
+                    href={{
+                      pathname: "https://www.tiktok.com/@frankie_frantic?lang=en",
+                    }}
+                    target="_blank"
+                  >
+                    <a href="https://www.tiktok.com/@frankie_frantic?lang=en">
+                      <span className="mx-2">
+                         <img src="tiktok.png" width="35px" height="35px" />
+                      </span>
+                    </a>
+                  </Link>
+                  
+                  <Link
+                    href={{
+                      pathname: "https://www.pinterest.co.uk/FrankieFranticFrog/",
+                    }}
+                    target="_blank"
+                  >
+                    <a href="https://www.pinterest.co.uk/FrankieFranticFrog/">
+                      <span className="mx-2">
+                         <img src="pinterest.png" width="35px" height="35px" />
+                      </span>
+                    </a>
+                  </Link>  
                 </div>
               </div>
             </div>
@@ -323,12 +375,12 @@ const Navbar = () => {
                 <div>
                   <Link
                     href={{
-                      pathname: "https://discord.gg/7Cvn8fWj ",
+                      pathname: "https://discord.gg/DTaXpmm2",
                     }}
                     target="_blank"
                   >
                     {/* {" "} */}
-                    <a href='https://discord.gg/7Cvn8fWj'>
+                    <a href='https://discord.gg/DTaXpmm2'>
                       <span className="mx-sm-2 mx-1 ">
                         <DiscordIcon />
                       </span>
@@ -348,11 +400,11 @@ const Navbar = () => {
                   </Link>
                   <Link
                     href={{
-                      pathname: "https://www.facebook.com/groups/446146080823555/about",
+                      pathname: "https://www.facebook.com/profile.php?id=100086427944468",
                     }}
                     target="_blank"
                   >
-                    <a href="https://www.facebook.com/groups/446146080823555/about">
+                    <a href="https://www.facebook.com/profile.php?id=100086427944468">
                       <span className="mx-2">
                         <FacebookOutlined style={{ fontSize: "36px", color: "black" }} />
                       </span>
@@ -380,6 +432,32 @@ const Navbar = () => {
                     <a href="https://opensea.io/collection/frantic-frog">
                       <span className="mx-sm-2 mx-1 ">
                         <ShipIcon />
+                      </span>
+                    </a>
+                  </Link>
+                  
+                  <Link
+                    href={{
+                      pathname: "https://www.tiktok.com/@frankie_frantic?lang=en",
+                    }}
+                    target="_blank"
+                  >
+                    <a href="https://www.tiktok.com/@frankie_frantic?lang=en">
+                      <span className="mx-sm-2 mx-1 ">
+                         <img src="tiktok.png" width="35px" height="35px" />
+                      </span>
+                    </a>
+                  </Link>
+                  
+                  <Link
+                    href={{
+                      pathname: "https://www.pinterest.co.uk/FrankieFranticFrog/",
+                    }}
+                    target="_blank"
+                  >
+                    <a href="https://www.pinterest.co.uk/FrankieFranticFrog/">
+                      <span className="mx-sm-2 mx-1 ">
+                         <img src="pinterest.png" width="35px" height="35px" />
                       </span>
                     </a>
                   </Link>
