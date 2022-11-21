@@ -54,8 +54,8 @@ const Navbar = () => {
           } d-flex w-100 navbar-wrapper justify-content-center py-sm-2 py-2`}
       >
         <Desktop>
-          <div className="container">
-            <div className="d-flex  align-items-center justify-content-between">
+          <div className="px-0">
+            <div className="d-flex align-items-center justify-content-between gap-5 leftSide">
               <div>
                 <img
                   className="cursor-pointer mx-3"
@@ -91,7 +91,7 @@ const Navbar = () => {
                   <a href="https://polygonscan.com/address/0xbb45c37a3e97433b0483300c8ed2749b9a08c6a2">CONTRACT</a>
                 </li> */}
               </div>
-              <div>
+              <div className="rightSide">
                 <Link
                   href={{
                     pathname: "https://discord.gg/DTaXpmm2",
@@ -153,32 +153,32 @@ const Navbar = () => {
                     </span>
                   </a>
                 </Link>
-                
+
                 <Link
-                    href={{
-                      pathname: "https://www.tiktok.com/@frankie_frantic?lang=en",
-                    }}
-                    target="_blank"
-                  >
-                    <a href="https://www.tiktok.com/@frankie_frantic?lang=en">
-                      <span className="mx-2">
-                         <img src="tiktok.png" width="35px" height="35px" />
-                      </span>
-                    </a>
-                  </Link>
-                  
-                  <Link
-                    href={{
-                      pathname: "https://www.pinterest.co.uk/FrankieFranticFrog/",
-                    }}
-                    target="_blank"
-                  >
-                    <a href="https://www.pinterest.co.uk/FrankieFranticFrog/">
-                      <span className="mx-2">
-                         <img src="pinterest.png" width="35px" height="35px" />
-                      </span>
-                    </a>
-                  </Link>  
+                  href={{
+                    pathname: "https://www.tiktok.com/@frankie_frantic?lang=en",
+                  }}
+                  target="_blank"
+                >
+                  <a href="https://www.tiktok.com/@frankie_frantic?lang=en">
+                    <span className="mx-2">
+                      <img src="tiktok.png" width="35px" height="35px" />
+                    </span>
+                  </a>
+                </Link>
+
+                <Link
+                  href={{
+                    pathname: "https://www.pinterest.co.uk/FrankieFranticFrog/",
+                  }}
+                  target="_blank"
+                >
+                  <a href="https://www.pinterest.co.uk/FrankieFranticFrog/">
+                    <span className="mx-2">
+                      <img src="pinterest.png" width="35px" height="35px" />
+                    </span>
+                  </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -332,7 +332,7 @@ const Navbar = () => {
                       </span>
                     </a>
                   </Link>
-                  
+
                   <Link
                     href={{
                       pathname: "https://www.tiktok.com/@frankie_frantic?lang=en",
@@ -341,11 +341,11 @@ const Navbar = () => {
                   >
                     <a href="https://www.tiktok.com/@frankie_frantic?lang=en">
                       <span className="mx-2">
-                         <img src="tiktok.png" width="35px" height="35px" />
+                        <img src="tiktok.png" alt="Icon" />
                       </span>
                     </a>
                   </Link>
-                  
+
                   <Link
                     href={{
                       pathname: "https://www.pinterest.co.uk/FrankieFranticFrog/",
@@ -354,23 +354,23 @@ const Navbar = () => {
                   >
                     <a href="https://www.pinterest.co.uk/FrankieFranticFrog/">
                       <span className="mx-2">
-                         <img src="pinterest.png" width="35px" height="35px" />
+                        <img src="pinterest.png" alt="Icon" />
                       </span>
                     </a>
-                  </Link>  
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
 
-          <nav className="navbar h-86 navbar-expand-lg navbar-light p-sm-3 p-2 w-100">
+          <nav className="navbar h-86 navbar-expand-lg navbar-light p-sm-3 p-2 px-sm-0 w-100">
             <div className="d-flex justify-content-between w-100 align-items-center">
               <img
                 className="logo-img cursor-pointer mx-2"
                 src="/png/logo.png"
                 alt="logo"
               />
-              <div className="d-flex align-items-center">
+              <div className="d-flex align-items-center rightSide">
                 {/* {" "} */}
                 <div>
                   <Link
@@ -435,7 +435,7 @@ const Navbar = () => {
                       </span>
                     </a>
                   </Link>
-                  
+
                   <Link
                     href={{
                       pathname: "https://www.tiktok.com/@frankie_frantic?lang=en",
@@ -444,11 +444,11 @@ const Navbar = () => {
                   >
                     <a href="https://www.tiktok.com/@frankie_frantic?lang=en">
                       <span className="mx-sm-2 mx-1 ">
-                         <img src="tiktok.png" width="35px" height="35px" />
+                        <img src="tiktok.png" width="35px" height="35px" />
                       </span>
                     </a>
                   </Link>
-                  
+
                   <Link
                     href={{
                       pathname: "https://www.pinterest.co.uk/FrankieFranticFrog/",
@@ -457,7 +457,7 @@ const Navbar = () => {
                   >
                     <a href="https://www.pinterest.co.uk/FrankieFranticFrog/">
                       <span className="mx-sm-2 mx-1 ">
-                         <img src="pinterest.png" width="35px" height="35px" />
+                        <img src="pinterest.png" width="35px" height="35px" />
                       </span>
                     </a>
                   </Link>

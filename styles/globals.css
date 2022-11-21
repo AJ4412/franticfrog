@@ -41,7 +41,7 @@ html {
   --font-xxl: 70px;
   --font-xl: 40px;
   --font-lg: 26px;
-  --font-md: 20px;
+  --font-md: 17px;
   --font-sm: 18px;
   /* COLORS */
   --black: #000000;
@@ -226,6 +226,23 @@ a {
   z-index: 1000 !important;
 }
 
+.leftSide>div,
+.rightSide {
+  display: flex !important;
+  align-items: center;
+  gap: 0px;
+}
+
+.rightSide svg {
+  width: 28px;
+  height: 28px;
+}
+
+.rightSide img {
+  width: 28px;
+  height: 28px;
+}
+
 /* HAMBURGER ICON STYLE  */
 @media (max-width: 991.98px) {
   /* NAVBAR OVERLAY TOGGLE */
@@ -234,14 +251,14 @@ a {
     position: relative;
     width: 29px;
     cursor: pointer;
-    height: 25px;
+    height: 23px;
     z-index: 15;
   }
 
   .first {
     background-color: #000;
     width: 100%;
-    height: 6px;
+    height: 4px;
     position: absolute;
     border-radius: 20px;
     right: 0;
@@ -250,7 +267,7 @@ a {
   .second {
     background-color: #000;
     width: 100%;
-    height: 6px;
+    height: 4px;
     position: absolute;
     right: 0;
     border-radius: 20px;
@@ -264,7 +281,7 @@ a {
   .third {
     background-color: #000;
     width: 100%;
-    height: 6px;
+    height: 4px;
     position: absolute;
     right: 0;
     border-radius: 20px;
@@ -832,6 +849,16 @@ a {
 
   .community-text {
     font-size: var(--font-xxl);
+  }
+
+  .rightSide svg {
+    width: 23px !important;
+    height: 23px !important;
+  }
+
+  .rightSide img {
+    width: 23px !important;
+    height: 23px !important;
   }
 }
 
