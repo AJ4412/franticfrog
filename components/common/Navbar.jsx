@@ -418,7 +418,7 @@ const Navbar = () => {
                   >
                     <a href="https://twitter.com/frankie_frantic">
                       <span className="mx-sm-2 mx-1 ">
-                        <TwitterIcon />
+                        <img src="twitter.png" width="35px" height="35px" />
                       </span>
                     </a>
                   </Link>
