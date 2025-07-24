@@ -39,7 +39,7 @@ export default function Main() {
       <Head>
         <link rel="icon" href="/png/loading1 (2).png" />
         <title>Frantic Frog | Edwin Schottenstein</title>
-        <meta name="author" content="Edwin Schottenstein">
+        <meta name="author" content="Edwin Schottenstein" />
         <meta name='description' content='Frantic Frog is a collection of 10,000 unique Frantic Frog NFTs featuring Frankie, The Frantic Frog amiably known in the community as F Cube. Glide and slippity slide into the NFT tide. Come along for the ride and join the F Cube frantic side.' />
       </Head>
 
